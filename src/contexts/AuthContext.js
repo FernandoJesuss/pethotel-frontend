@@ -29,11 +29,7 @@
 
 
 
-
-
-
-
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext();
 
@@ -41,18 +37,35 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(null);
 
+  // Carregar do localStorage ao iniciar
+  useEffect(() => {
+    const savedToken = localStorage.getItem('token');
+    const savedUser = localStorage.getItem('user');
+    if (savedToken && savedUser) {
+      setToken(savedToken);
+      setUser(JSON.parse(savedUser));
+    }
+  }, []);
+
   function login(username, password) {
-    // Simulando login bem-sucedido e geração de token
     const fakeToken = 'fake-jwt-token-123';
-    setUser({ username });
+    const userData = { username };
+
     setToken(fakeToken);
+    setUser(userData);
+
+    // Salvar no localStorage
+    localStorage.setItem('token', fakeToken);
+    localStorage.setItem('user', JSON.stringify(userData));
+
     console.log('Usuário logado:', username);
-    console.log('Token simulado:', fakeToken);
   }
 
   function logout() {
-    setUser(null);
     setToken(null);
+    setUser(null);
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
   }
 
   return (
@@ -65,4 +78,3 @@ export function AuthProvider({ children }) {
 export function useAuth() {
   return useContext(AuthContext);
 }
-

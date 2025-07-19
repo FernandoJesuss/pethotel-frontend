@@ -1,0 +1,54 @@
+.cadastro-container {
+    display: flex;
+    height: 100vh;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 2rem;
+}
+
+.cadastro-left {
+    flex: 1;
+    background-image: url('../assets/dog-hotel-cadastro.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cadastro-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.cadastro-form input,
+.cadastro-form button {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.cadastro-form button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cadastro-form button:hover {
+    background-color: #468a49;
+}

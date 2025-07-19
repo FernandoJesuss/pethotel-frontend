@@ -1,0 +1,53 @@
+.senha-container {
+    display: flex;
+    height: 100vh;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 2rem;
+}
+
+.senha-left {
+    flex: 1;
+    background-image: url('../assets/dog-hotel-senha.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.senha-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.senha-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.senha-form input,
+.senha-form button {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.senha-form button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.senha-form button:hover {
+    background-color: #468a49;
+}

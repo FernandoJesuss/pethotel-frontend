@@ -1,0 +1,54 @@
+/* src/styles/Relatorio.css */
+
+.relatorio-container {
+  padding: 1rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.nav-links {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.tabela {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.tabela thead {
+  background-color: #e5e7eb;
+}
+
+.tabela th,
+.tabela td {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+}
+
+.tabela tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.total {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.alerta {
+  color: #dc2626;
+}
