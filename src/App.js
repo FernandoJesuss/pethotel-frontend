@@ -19,8 +19,8 @@ function App() {
         <Route path="/nota" element={<GerarNota />} />
         <Route path="/relatorio" element={<Relatorio />} />
 
-         <Route path="/cadastro-usuario" element={<CadastroUsuario />} />
-  <Route path="/esqueci-senha" element={<EsqueciSenha />} />
+        <Route path="/cadastro-usuario" element={<CadastroUsuario />} />
+        <Route path="/esqueci-senha" element={<EsqueciSenha />} />
       </Routes>
     </BrowserRouter>
   );

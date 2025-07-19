@@ -50,6 +50,7 @@
 
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/CadastroUsuario.css';
 
 const CadastroUsuario = () => {
@@ -95,6 +96,10 @@ const CadastroUsuario = () => {
             required
           />
           <button type="submit">Cadastrar</button>
+            <hr className="linha-links" />
+            <p className="login-links">
+           <Link to="/">Volte a tela de login</Link>
+           </p>
         </form>
       </div>
     </div>
