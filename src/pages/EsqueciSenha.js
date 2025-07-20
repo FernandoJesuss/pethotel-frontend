@@ -1,43 +1,5 @@
-// // src/pages/EsqueciSenha.js
-// import { useState } from 'react';
-
-// const EsqueciSenha = () => {
-//   const [email, setEmail] = useState('');
-
-//   const handleRecuperar = (e) => {
-//     e.preventDefault();
-//     // Apenas simulação
-//     alert(`Instruções de recuperação enviadas para: ${email}`);
-//   };
-
-//   return (
-//     <div className="p-4 max-w-md mx-auto">
-//       <h2 className="text-xl font-bold mb-4">Recuperar Senha</h2>
-//       <form onSubmit={handleRecuperar} className="flex flex-col gap-4">
-//         <input
-//           type="email"
-//           placeholder="Digite seu email"
-//           value={email}
-//           onChange={(e) => setEmail(e.target.value)}
-//           required
-//           className="border p-2 rounded"
-//         />
-//         <button type="submit" className="bg-blue-600 text-white p-2 rounded">
-//           Enviar Instruções
-//         </button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default EsqueciSenha;
-
-
-
-
-
-
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/EsqueciSenha.css';
 
 const EsqueciSenha = () => {
@@ -63,6 +25,10 @@ const EsqueciSenha = () => {
             required
           />
           <button type="submit">Enviar Link</button>
+           <hr className="linha-links" />
+                      <p className="login-links">
+                     <Link to="/">Volte a tela de login</Link>
+                     </p>
         </form>
       </div>
     </div>

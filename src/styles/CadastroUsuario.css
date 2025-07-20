@@ -21,6 +21,7 @@
     flex: 1;
     background-image: url('../assets/dog-hotel-cadastro.png');
     background-size: cover;
+     background-position: center;
 }
 
 .cadastro-right {
@@ -104,6 +105,6 @@
     left: 100%;
 }
 
-.cadastro-form buttonutton:active {
+.cadastro-form button:active {
     transform: translateY(-1px);
 }
