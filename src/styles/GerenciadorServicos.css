@@ -1,0 +1,211 @@
+/* .gerenciador-container {
+  background: linear-gradient(to right, #7b80ff, #a874d6);
+  min-height: 100vh;
+  padding: 2rem;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.subtitulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.cards-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background: #fff;
+  color: #333;
+  border-radius: 16px;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #5a5ac0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.card input, .card select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card button {
+  margin-top: 1.5rem;
+  background: linear-gradient(to right, #7b80ff, #a874d6);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card ul {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  padding: 1rem;
+  flex: 1;
+  text-align: center;
+  min-width: 120px;
+  color: #fff;
+}
+
+.stat p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+
+.stat span {
+  font-size: 0.9rem;
+} */
+
+
+
+
+
+
+.servicos-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  color: #333;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.painel {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  flex: 1 1 45%;
+  min-width: 320px;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #4b0082;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(to right, #6b4ede, #9e62d9);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #593dcf, #8847cc);
+}
+
+.lista ul {
+  padding-left: 18px;
+}
+
+.lista li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.resumo-card {
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+.resumo-card.total {
+  background: #ece3ff;
+  color: #4b0082;
+  font-weight: bold;
+}

@@ -31,6 +31,7 @@ const Dashboard = () => {
         <li><Link to="/cadastro">Cadastrar Tutor</Link></li>
         <li><Link to="/nota">Gerar Nota Fiscal</Link></li>
         <li><Link to="/relatorio">Relatório de Serviços</Link></li>
+        <li><Link to="/servicos">Gerenciar Serviços</Link></li>
       </ul>
     </div>
   );

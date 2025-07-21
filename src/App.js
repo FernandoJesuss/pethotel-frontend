@@ -84,6 +84,7 @@ import CadastroUsuario from './pages/CadastroUsuario';
 import EsqueciSenha from './pages/EsqueciSenha';
 import RequireAuth from './components/RequireAuth'; // <-- novo
 import { AuthProvider } from './contexts/AuthContext';
+import GerenciadorServicos from './pages/GerenciadorServicos';
 
 function AppRoutes() {
   const navigate = useNavigate();
@@ -97,6 +98,7 @@ function AppRoutes() {
       <Route path="/cadastro" element={<RequireAuth><CadastroTutor /></RequireAuth>} />
       <Route path="/nota" element={<RequireAuth><GerarNota /></RequireAuth>} />
       <Route path="/relatorio" element={<RequireAuth><Relatorio /></RequireAuth>} />
+      <Route path="/servicos" element={<GerenciadorServicos />} />
 
       {/* Rotas públicas */}
       <Route path="/cadastro-usuario" element={<CadastroUsuario />} />
