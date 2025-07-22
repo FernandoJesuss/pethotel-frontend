@@ -1,56 +1,120 @@
-.gerar-nota-form {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+.gerar-nota-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+.gerar-nota-imagem {
+  flex: 1 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e3f5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+}
+
+.gerar-nota-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.05);
+  height: 100vh;
+  font-size: 2.5rem;
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  font-family: sans-serif;
+}
+
+
+
+
+
 .gerar-nota-form h2 {
-  text-align: center;
+  font-size: 24px;
   margin-bottom: 20px;
   color: #333;
 }
 
-.form-group {
+.gsl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  max-height: 500px;
+  border-radius: 16px;
+
+  background-color: #64aa62;
+}
+
+.form-group-nf {
+  width: 100%;
+  max-width: 400px;
   margin-bottom: 15px;
 }
 
-.form-group input {
+.form-group-nf input {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-  transition: border 0.3s;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
 }
 
 .form-group input:focus {
-  border-color: #6a11cb;
   outline: none;
+  border-color: #6c63ff;
 }
 
 .erro {
-  color: red;
+  color: #e63946;
   font-size: 13px;
   margin-top: 5px;
+  text-align: left;
+  padding-left: 5px;
 }
 
 .btn-submit {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: linear-gradient(to right, #6c63ff, #7f53ac);
   color: white;
-  font-size: 16px;
   border: none;
-  border-radius: 6px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
+  width: 100%;
+  max-width: 400px;
 }
 
 .btn-submit:hover {
-  background: linear-gradient(to right, #2575fc, #6a11cb);
+  background: linear-gradient(to right, #7f53ac, #6c63ff);
+}
+
+
+body.gerar-nota-body {
+  margin: 0;
+  padding: 0;
+  background-color: #06e2ab;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.mensagem-sucesso {
+  color: #2dce89;
+  font-size: 25px;
+  margin-top: 15px;
+  text-align: center;
 }

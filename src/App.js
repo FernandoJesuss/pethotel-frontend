@@ -82,9 +82,10 @@ import GerarNota from './pages/GerarNota';
 import Relatorio from './pages/Relatorio';
 import CadastroUsuario from './pages/CadastroUsuario';
 import EsqueciSenha from './pages/EsqueciSenha';
-import RequireAuth from './components/RequireAuth'; // <-- novo
+import RequireAuth from './components/RequireAuth'; 
 import { AuthProvider } from './contexts/AuthContext';
 import GerenciadorServicos from './pages/GerenciadorServicos';
+import CalendarioCompromissos from './pages/CalendarioCompromissos';
 
 function AppRoutes() {
   const navigate = useNavigate();
@@ -99,6 +100,7 @@ function AppRoutes() {
       <Route path="/nota" element={<RequireAuth><GerarNota /></RequireAuth>} />
       <Route path="/relatorio" element={<RequireAuth><Relatorio /></RequireAuth>} />
       <Route path="/servicos" element={<GerenciadorServicos />} />
+      <Route path="/calendario" element={<CalendarioCompromissos />} />
 
       {/* Rotas públicas */}
       <Route path="/cadastro-usuario" element={<CadastroUsuario />} />
