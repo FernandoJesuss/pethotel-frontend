@@ -86,6 +86,8 @@ import RequireAuth from './components/RequireAuth';
 import { AuthProvider } from './contexts/AuthContext';
 import GerenciadorServicos from './pages/GerenciadorServicos';
 import CalendarioCompromissos from './pages/CalendarioCompromissos';
+import ParteVendas from './pages/ParteVendas';
+
 
 function AppRoutes() {
   const navigate = useNavigate();
@@ -101,6 +103,7 @@ function AppRoutes() {
       <Route path="/relatorio" element={<RequireAuth><Relatorio /></RequireAuth>} />
       <Route path="/servicos" element={<GerenciadorServicos />} />
       <Route path="/calendario" element={<CalendarioCompromissos />} />
+       <Route path="/vendas" element={<ParteVendas />} />
 
       {/* Rotas públicas */}
       <Route path="/cadastro-usuario" element={<CadastroUsuario />} />

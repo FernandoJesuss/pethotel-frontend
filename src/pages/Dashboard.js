@@ -11,6 +11,7 @@ const Dashboard = () => {
         <li><Link to="/relatorio">Relatório de Serviços</Link></li>
         <li><Link to="/servicos">Gerenciar Serviços</Link></li>
          <li><Link to="/calendario">Calendario de Compromissos</Link></li>
+          <li><Link to="/Vendas">Vendas de Produtos</Link></li>
       </ul>
     </div>
   );
