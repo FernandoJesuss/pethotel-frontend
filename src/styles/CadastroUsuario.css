@@ -5,7 +5,7 @@
     overflow: hidden;
 } */
 
-.cadastro-container {
+.cadastro-container-es {
     display: flex;
     height: 100vh;
     font-size: 2.5rem;
@@ -18,7 +18,7 @@
 }
 
 .cadastro-left {
-    flex: 1;
+    flex:1 1;
     background-image: url('../assets/dog-hotel-cadastro.png');
     background-size: cover;
      background-position: center;

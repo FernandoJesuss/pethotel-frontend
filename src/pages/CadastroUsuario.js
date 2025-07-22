@@ -18,7 +18,7 @@ const CadastroUsuario = () => {
   };
 
   return (
-    <div className="cadastro-container">
+    <div className="cadastro-container-es">
       <div className="cadastro-left"></div>
       <div className="cadastro-right">
         <h2>Cadastro de Usuário</h2>
