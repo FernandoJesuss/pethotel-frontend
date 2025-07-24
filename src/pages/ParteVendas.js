@@ -338,7 +338,7 @@ const ParteVendas = () => {
         </div>
 
         {/* Resumo */}
-        <div className="section resumo">
+        <div className="section resumo-gs">
           <h2>📊 Resumo</h2>
           <div className="resumo-row">
             <span>Subtotal:</span>

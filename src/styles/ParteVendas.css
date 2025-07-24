@@ -28,7 +28,7 @@
   overflow-y: auto;
 }
 
-/* Cabeçalho */
+
 .ponto-vendas-header {
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,7 @@
   border-radius: 8px;
 }
 
-/* Seções do formulário */
+
 .section {
   background-color: #ffffff;
   padding: 1.5rem;
@@ -73,7 +73,7 @@
   color: #2c3e50;
 }
 
-/* Cabeçalho da seção */
+
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -81,7 +81,7 @@
   margin-bottom: 1rem;
 }
 
-/* Formulário */
+
 .form-group {
   margin-bottom: 1rem;
 }
@@ -102,7 +102,7 @@ textarea {
   resize: none;
 }
 
-/* Botões */
+
 button {
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
@@ -141,18 +141,18 @@ button {
     font-size: 0.9rem;
     transition: all 0.2s ease;
     cursor: pointer;
-    /* background-color: aqua; */
+
     
 }
 
-/* Placeholder de itens */
+
 .itens-placeholder {
   text-align: center;
   color: #999;
   padding: 2rem 1rem;
 }
 
-/* Resumo */
+
 .resumo-row {
   display: flex;
   justify-content: space-between;
@@ -160,7 +160,7 @@ button {
   font-size: 0.95rem;
 }
 
-.resumo {
+.resumo-gs {
     display: flex;
     flex-direction: column;
   background-color: #eafbee;
@@ -172,7 +172,7 @@ button {
   color: #2ecc71;
 }
 
-/* Responsivo opcional (para telas menores) */
+
 @media (max-width: 960px) {
   .tela-vendas {
     flex-direction: column;

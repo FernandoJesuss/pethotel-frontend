@@ -1,4 +1,4 @@
-.gerar-nota-container {
+/* .gerar-nota-container {
   display: flex;
   height: 100vh;
   background-color: #f8f9fa;
@@ -117,4 +117,215 @@ body.gerar-nota-body {
   font-size: 25px;
   margin-top: 15px;
   text-align: center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*esse tavaledo agora*/
+
+
+.gerar-nota-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* .gsl {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* Lado da imagem */
+.gerar-nota-imagem {
+  flex: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 2rem;
+  color: #fff;
+}
+
+.texto-lateral {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left:  30rem;
+  justify-content: center;
+  align-items: center;
+  top: 15rem;
+  max-width: 600px;
+ 
+}
+
+.texto-lateral h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.texto-lateral p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Lado do formulário */
+.gerar-nota-form {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border-radius: 0 0 0 0; */
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  border-radius: 16px 0 0 16px;
+
+}
+
+.gerar-nota-form h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.descricao-formulario {
+  color: #667;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grupo de campos */
+.form-group-nf {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group-nf label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group-nf input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group-nf input:focus {
+  outline: none;
+  border-color: #6c63ff;
+  background-color: #fff;
+}
+
+.form-group-nf small {
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.3rem;
+}
+
+/* Erros */
+.erro {
+  color: #e63946;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  padding-left: 4px;
+}
+
+/* Botão */
+.btn-submit {
+  background: linear-gradient(to right, #6c63ff, #7f53ac);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(to right, #7f53ac, #6c63ff);
+}
+
+/* Mensagem de sucesso */
+.mensagem-sucesso {
+  color: #2dce89;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+body.gerar-nota-body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Responsivo */
+@media (max-width: 960px) {
+  .gerar-nota-container {
+    flex-direction: column;
+  }
+
+  .gerar-nota-imagem,
+  .gerar-nota-form {
+    flex: none;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 0;
+  }
+
+  .texto-lateral {
+    text-align: center;
+  }
 }
