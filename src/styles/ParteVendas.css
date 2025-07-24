@@ -1,19 +1,24 @@
 .tela-vendas {
   display: flex;
-  height: 100vh;
-  background-color: #f8f9fc;
+  /* height: 100vh; */
+  /* background-color: #f8f9fc; */
   font-family: 'Segoe UI', sans-serif;
 }
 
 .vendas-imagem {
   /* flex: 1 1; */
   width: 50%;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+
+  color: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  border-right: 1px solid #ddd;
+  /* border-right: 1px solid #ddd; */
+  
+ 
+   background: linear-gradient(0deg, #667fea, 0deg, #764ba2);
 }
 
 .vendas-imagem img {
@@ -23,9 +28,19 @@
 }
 
 .ponto-vendas-container {
-  flex: 2;
-  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  /* max-width: 1200px; */
+  /* height: 100%; */
+  
+  margin: 10rem;
+  /* flex: 2; */
+  /* padding: 2rem 3rem; */
   overflow-y: auto;
+  background: #dff403;
+  /* border: 1px solid; */
+  border-radius: 12px;
 }
 
 
@@ -134,7 +149,7 @@ button {
 
 .btn-add-item {
     display: flex;
-    margin-left: 70rem;
+    /* margin-left: 70rem; */
     
        padding: 0.6rem 1.2rem;
     border-radius: 8px;
