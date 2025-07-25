@@ -43,6 +43,12 @@ const Login = ({ onLogin }) => {
     <div className="login-container">
       <div className="login-left"></div>
 
+<h1 className="hotel-pet">
+  {/* <span className="hotel-casa">⌂</span> */}
+  <span className="hotel-hotel-casa">Hotel</span>
+  {/* <span className="hotel-pata">🐾</span> */}
+  <span className="hotel-pet-pet">Pet</span>
+</h1>
       <div className="login-right">
         <h1 className="login-title">Bem-vindo de volta!</h1>
         <p className="login-subtitle">Faça login para gerenciar a hospedagem do seu pet</p>
@@ -63,7 +69,7 @@ const Login = ({ onLogin }) => {
           />
 
           {/* <label for="password" class="form-label">Senha</label> */}
-          <label htmlFor="password" className="form-label"></label>
+          <label htmlFor="password" className="form-label">Senha</label>
           <input
             type="password"
             placeholder="••••••••"
@@ -81,6 +87,7 @@ const Login = ({ onLogin }) => {
         </form>
       </div>
     </div>
+    // </div>
   );
 };
 
