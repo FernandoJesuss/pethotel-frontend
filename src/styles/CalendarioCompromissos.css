@@ -1,4 +1,4 @@
-.calendario-container {
+/* .calendario-container {
   display: flex;
   height: 100vh;
   font-family: 'Segoe UI', sans-serif;
@@ -57,4 +57,321 @@
 
 
 
+ */
 
+
+
+
+
+
+
+
+
+
+
+
+/* === Cabeçalho === */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icone-logo {
+  font-size: 20px;
+  color: #6c63ff;
+}
+
+.perfil-usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  background-color: #6c63ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nome-usuario {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+
+.cargo-usuario {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+/* === Container principal === */
+.agenda-pro-container {
+  display: flex;
+  height: calc(100vh - 70px);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* === Colunas === */
+.agenda-coluna {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* === Calendário === */
+.calendario-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.resumo-datas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.resumo-card {
+  background-color: #f1f4fa;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.resumo-card strong {
+  font-size: 20px;
+  display: block;
+}
+
+.resumo-card span {
+  font-size: 12px;
+  color: #666;
+}
+
+/* === Compromissos === */
+.compromissos-box {
+  flex: 2;
+}
+
+.topo-compromissos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botao-novo {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-novo:hover {
+  background-color: #0090dd;
+}
+
+.input-busca {
+  margin: 16px 0;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.form-compromisso {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-compromisso input {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+}
+
+.form-compromisso button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #6c63ff, #7f53ac);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Lista de compromissos */
+.lista-compromissos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-compromisso {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f5f7fb;
+  border-left: 4px solid #00aaff;
+  padding: 12px;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.hora-compromisso {
+  font-weight: bold;
+  min-width: 60px;
+}
+
+.info-compromisso strong {
+  display: block;
+  font-size: 14px;
+}
+
+.tag-compromisso {
+  background-color: #d7efff;
+  color: #0077aa;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+/* === Painel Lateral === */
+.painel-box {
+  width: 260px;
+}
+
+.clima-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emoji-clima {
+  font-size: 24px;
+  display: block;
+}
+
+.clima-box h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.clima-box p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.eventos-box,
+.estatisticas-box,
+.lembretes-box {
+  margin-bottom: 20px;
+}
+
+.eventos-box h4,
+.estatisticas-box h4,
+.lembretes-box h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.eventos-box ul,
+.lembretes-box ul {
+  padding-left: 0;
+  list-style: none;
+  font-size: 13px;
+  color: #333;
+}
+
+.estatistica {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.estatistica div {
+  background-color: #f1f4fa;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+}
+
+.estatistica strong {
+  font-size: 18px;
+  color: #6c63ff;
+}
+
+.estatistica span {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.lembretes-box li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.lembretes-box .urgente {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 8px;
+}
+
+.lembretes-box .normal {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: orange;
+  margin-right: 8px;
+}
+
+
+
+
+ 
