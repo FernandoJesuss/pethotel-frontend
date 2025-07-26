@@ -1,185 +1,124 @@
-/* .calendario-container {
-  display: flex;
-  height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f7f9fc;
-}
-
-.calendario-lado-esquerdo {
-  flex: 1;
-  padding: 40px;
-  background-color: #6c63ff;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.calendario-lado-direito {
-  flex: 2;
-  padding: 40px;
-  background-color: white;
-}
-
-.calendario-lado-direito h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.form-compromisso {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.form-compromisso input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 14px;
-  background-color: #f5f5f5;
-}
-
-.form-compromisso button {
-  padding: 10px 20px;
-  background: linear-gradient(to right, #6c63ff, #7f53ac);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.lista-compromissos li {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-/* === Cabeçalho === */
-.cabecalho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.icone-logo {
-  font-size: 20px;
-  color: #6c63ff;
-}
-
-.perfil-usuario {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.avatar {
-  background-color: #6c63ff;
-  color: white;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nome-usuario {
-  font-weight: 600;
-  font-size: 14px;
+* {
   margin: 0;
-}
-
-.cargo-usuario {
-  font-size: 12px;
-  color: #666;
-  margin: 0;
-}
-
-/* === Container principal === */
-.agenda-pro-container {
-  display: flex;
-  height: calc(100vh - 70px);
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  padding: 20px;
-  gap: 20px;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* === Colunas === */
-.agenda-coluna {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  flex: 1;
+.agenda-pro-container {
   display: flex;
-  flex-direction: column;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  gap: 20px;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #667fea, #764ba2);
+  color: #0d0d0d;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+
 }
 
-/* === Calendário === */
+.agenda-coluna {
+  flex: 1;
+  background-color: #1e1e2f;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s ease;
+
+}
+
+.agenda-coluna:hover {
+  transform: translateY(-4px);
+}
+
 .calendario-box h3 {
-  font-size: 18px;
+  font-size: 1.3rem;
   margin-bottom: 10px;
+  color: #f0f0ee;
+}
+
+.calendario-box,
+.compromissos-box,
+.painel-box {
+  display: flex;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 15px;
+  border: 2px solid #444;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  transition: transform 0.3s;
+  font-size: 1.3rem;
+  color: #f6f6f5;
+
+}
+
+.calendario-box:hover,
+.compromissos-box:hover,
+.painel-box:hover {
+  transform: translateY(-3px);
+}
+
+.react-calendar {
+  font-size: 22px;
+  display: contents;
+  align-items: center;
+    border-radius: 10px;
+  overflow: hidden;
+}
+
+.react-calendar__tile--active {
+  font-size: 25px;
+  font-weight: bold;
+  background: #7e57c2 !important;
+  color: #ffffff !important;
+  border-radius: 6px;
 }
 
 .resumo-datas {
   display: flex;
-  justify-content: space-around;
-  margin-top: auto;
-  padding-top: 20px;
+  justify-content: space-between;
+  position: relative;
+  top: 1.5rem;
+  margin-top: 40rem;
+  padding: 16px 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  align-items: center;
 }
 
-.resumo-card {
-  background-color: #f1f4fa;
-  padding: 10px;
+.resumo-datas div {
+  /* background: rgba(249, 2, 129, 0.1); */
+  padding: 8px;
   border-radius: 10px;
   text-align: center;
-  width: 100px;
 }
 
-.resumo-card strong {
-  font-size: 20px;
-  display: block;
+.resumo-datas strong {
+  font-size: 1.8rem;
+  /* color: #7e57c2; */
+  color: #ffd700;
+  padding: 16px 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.resumo-card span {
-  font-size: 12px;
-  color: #666;
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  box-sizing: border-box;
+  font-size: 19px;
 }
 
-/* === Compromissos === */
-.compromissos-box {
-  flex: 2;
+.react-calendar__navigation {
+  height: 100%;
+  min-width: 44px;
+  border-radius: 12px;
+  background: #f1fbee;
 }
 
 .topo-compromissos {
@@ -188,190 +127,154 @@
   align-items: center;
 }
 
+.topo-compromissos h3 {
+  font-size: 1.4rem;
+  color: #fcfdfd;
+}
+
 .botao-novo {
-  background-color: #00aaff;
-  color: white;
+  background-color: #7e57c2;
   border: none;
-  padding: 8px 16px;
+  color: white;
+  padding: 8px 14px;
   border-radius: 12px;
-  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
 .botao-novo:hover {
-  background-color: #0090dd;
+  background-color: #9b72e6;
 }
 
 .input-busca {
-  margin: 16px 0;
-  padding: 10px 12px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  font-size: 14px;
-  width: 100%;
-  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2f4430;
+  color: #fff;
 }
 
 .form-compromisso {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
-.form-compromisso input {
+.form-compromisso input,
+.form-compromisso button {
   padding: 10px;
-  flex: 1;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 14px;
-  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: rgb(42, 41, 41);
+
 }
+
 
 .form-compromisso button {
-  padding: 10px 20px;
-  background: linear-gradient(to right, #6c63ff, #7f53ac);
+  background-color: #7e57c2;
   color: white;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
+  transition: background 0.3s ease;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
-/* Lista de compromissos */
-.lista-compromissos {
+.form-compromisso button:hover {
+  background-color: #5c3dbb;
+}
+
+.lista-compromissos .card-compromisso {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  background: rgba(4, 0, 10, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-left: 4px solid #26305c;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
 }
 
-.card-compromisso {
-  display: flex;
-  align-items: flex-start;
-  background-color: #f5f7fb;
-  border-left: 4px solid #00aaff;
-  padding: 12px;
-  border-radius: 8px;
-  gap: 10px;
+.lista-compromissos,
+.card-compromisso:hover {
+  /* background: rgba(16, 27, 78, 0.15); */
+  transform: translateX(4px);
 }
 
 .hora-compromisso {
   font-weight: bold;
-  min-width: 60px;
+  color: #764ba2;
+  /* color: #fff; */
+  font-size: 1.8rem;
+  color: #ffd700;
+  /* margin-right: 15px; */
 }
 
 .info-compromisso strong {
-  display: block;
-  font-size: 14px;
+  font-size: 3rem;
+  color: #fff;
 }
 
-.tag-compromisso {
-  background-color: #d7efff;
-  color: #0077aa;
-  padding: 2px 8px;
-  border-radius: 8px;
-  font-size: 12px;
-  margin-top: 4px;
-  display: inline-block;
-}
-
-/* === Painel Lateral === */
-.painel-box {
-  width: 260px;
-}
-
-.clima-box {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.emoji-clima {
-  font-size: 24px;
-  display: block;
-}
-
-.clima-box h2 {
-  margin: 0;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.clima-box p {
-  margin: 4px 0;
-  font-size: 14px;
-  color: #555;
-}
-
-.eventos-box,
-.estatisticas-box,
-.lembretes-box {
-  margin-bottom: 20px;
-}
-
-.eventos-box h4,
-.estatisticas-box h4,
-.lembretes-box h4 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 6px;
+.vazio {
+  font-size: 25px;
+  font-style: italic;
+  color: #eae9e9;
 }
 
 .eventos-box ul,
 .lembretes-box ul {
-  padding-left: 0;
   list-style: none;
-  font-size: 13px;
-  color: #333;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.eventos-box li,
+.lembretes-box li {
+  margin-bottom: 10px;
+  color: #eae9e9;
+
 }
 
 .estatistica {
   display: flex;
   justify-content: space-around;
-  text-align: center;
+  margin-top: 15px;
 }
 
 .estatistica div {
-  background-color: #f1f4fa;
-  border-radius: 10px;
-  padding: 10px;
-  width: 100px;
+  text-align: center;
 }
 
 .estatistica strong {
-  font-size: 18px;
-  color: #6c63ff;
-}
-
-.estatistica span {
   display: block;
-  font-size: 12px;
-  color: #777;
+  font-size: 1.6rem;
+  color: #7e57c2;
 }
 
-.lembretes-box li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  font-size: 13px;
+.clima-box,
+
+.eventos-box,
+.estatisticas-box,
+.lembretes-box {
+  background-color: #292943;
+  padding: 16px;
+  border-radius: 12px;
+
 }
 
-.lembretes-box .urgente {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: red;
-  margin-right: 8px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-.lembretes-box .normal {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: orange;
-  margin-right: 8px;
-}
-
-
-
-
- 
