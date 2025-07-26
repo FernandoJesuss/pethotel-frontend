@@ -1,33 +1,76 @@
-/* Estilo geral */
-.container-servicos {
-  padding: 20px;
-  background-color: #edf0f9;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
-  color: #333;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+
+}
+
+.gerenciador-wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.imagem-servicos {
+  display: flex;
+  width: 100%;
+  margin-left: 12rem;
+  max-width: 1140px;
+  margin-top: 280px;
+  max-height: 900px;
+  background-image: url('../assets/dog.png');
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(0deg, #667fea, 0deg, #764ba2);
+
+}
+
+.container-servicos {
+  flex: 1;
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff;
+  border: 2px solid #a8a5a5;
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+
 }
 
 .titulo {
-  font-size: 28px;
   font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 24px;
   text-align: center;
-  margin-bottom: 5px;
+
+
 }
 
 .subtitulo {
   text-align: center;
-  font-size: 14px;
-  color: #6a6a6a;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: white;
 }
 
-/* Banner de edição */
 .modo-edicao-banner {
-  background-color: #5f47c8;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  font-size: 14px;
+  background-color: #f1eeff;
+  border: 2px solid #3a0345;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 1.5rem;
 }
 
 .botoes-edicao {
@@ -38,6 +81,7 @@
 
 .btn-cancelar,
 .btn-salvar {
+  font-size: 16px;
   border: none;
   padding: 8px 16px;
   font-weight: 600;
@@ -56,20 +100,25 @@
   color: white;
 }
 
-/* Painel */
 .painel {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .card {
-  background-color: white;
+
+  background: #f8fafc;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  flex: 1;
-  min-width: 300px;
+  border: 2px dashed #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #6366f1;
+  background: #f1f5f9;
 }
 
 .formulario-servico input,
@@ -81,29 +130,83 @@
   border: 1px solid #ccc;
 }
 
-.btn-adicionar {
+label {
+  display: block;
+  font-weight: 500;
+  color: #37513d;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.formulario-servico input,
+.formulario-servico select {
   width: 100%;
-  padding: 10px;
-  background: linear-gradient(to right, #836fff, #5f47c8);
-  color: white;
-  border: none;
+  padding: 16px;
+  border: 2px solid #e5e7eb;
+  background-color: #fff;
   border-radius: 8px;
-  font-weight: 600;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+
+}
+
+.formulario-servico input::placeholder,
+.formulario-servico select::placeholder {
+  color: #888;
+  font-style: italic;
+  font-size: 22px;
+
+}
+
+.formulario-servico input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+
+}
+
+.formulario-servico select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+
+}
+
+.btn-adicionar {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+
+}
+
+.btn-adicionar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
 }
 
 .servicos-lista {
-  margin-top: 10px;
+  margin-top: 32px;
 }
 
 .cabecalho-servicos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f1f5f9;
+
 }
 
 .btn-excluir-todos {
@@ -120,8 +223,29 @@
 }
 
 .lista-servicos {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.servicos-lista {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 10px;
+  padding-right: 6px;
+}
+
+.servicos-lista::-webkit-scrollbar {
+  width: 6px;
+}
+
+.servicos-lista::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+
+.servicos-lista::-webkit-scrollbar-thumb:hover {
+  background-color: #667;
 }
 
 .item-servico {
@@ -133,6 +257,8 @@
   border-radius: 10px;
   margin-bottom: 10px;
   transition: all 0.3s ease;
+  flex-wrap: wrap;
+
 }
 
 .item-servico.em-edicao {
@@ -142,15 +268,23 @@
 }
 
 .servico-info {
-  display: flex;
+  display: contents;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+
 }
 
 .servico-nome {
-  font-weight: bold;
-  text-transform: lowercase;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .tipo-badge {
@@ -170,8 +304,9 @@
 }
 
 .valor {
-  font-weight: bold;
-  color: #333;
+  font-weight: 600;
+  color: #059669;
+  font-size: 16px;
 }
 
 .data {
@@ -179,7 +314,8 @@
   align-items: center;
   gap: 4px;
   font-size: 13px;
-  color: #777;
+  color: #9ca3af;
+
 }
 
 .servico-acoes button {
@@ -188,6 +324,12 @@
   cursor: pointer;
   margin-left: 8px;
   font-size: 16px;
+
+}
+
+.servico-acoes button:hover {
+  background: #f9fafb;
+  transform: scale(1.05);
 }
 
 .btn-editar {
@@ -198,7 +340,6 @@
   color: #e63946;
 }
 
-/* Nenhum serviço */
 .nenhum-servico {
   color: #777;
   font-style: italic;
@@ -206,33 +347,70 @@
   margin-top: 20px;
 }
 
-/* Resumo */
 .resumo {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  background: white;
+  border: 2px solid #f1f5f9;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 2px solid #f1f5f9;
+
+}
+
+.resumo:hover {
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
 }
 
 .card-resumo {
-  background-color: white;
   border-radius: 12px;
-  padding: 20px;
   flex: 1;
   min-width: 150px;
-  text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
 }
 
 .card-resumo h4 {
   font-size: 22px;
   margin: 0;
   color: #333;
+
 }
 
 .card-resumo p {
   margin: 5px 0 0;
   color: #888;
   font-size: 14px;
+
+}
+
+@media (max-width: 768px) {
+  .gerenciador-wrapper {
+    flex-direction: column;
+  }
+
+  .imagem-servicos {
+    height: 250px;
+  }
+
+  .container-servicos {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
 }
