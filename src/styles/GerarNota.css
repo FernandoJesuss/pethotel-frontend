@@ -1,16 +1,15 @@
-/*esse tavaledo agora*/
-
-
 .gerar-nota-container {
   display: flex;
-  height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
   font-family: 'Segoe UI', sans-serif;
-  /* background: linear-gradient(135deg, #667eea, #764ba2); */
 }
 
 /* Lado da imagem */
 .gerar-nota-imagem {
-  flex: 1.8;
+  flex: 1.1;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -20,25 +19,31 @@
   padding: 3rem 2rem;
   color: #fff;
   width: 100%;
-  max-width: 100%;
-  max-height: 90%;
+  max-width: 1100px;
   object-fit: contain;
   border: none;
 }
 
+/* Texto lateral (antes fixo, agora adaptável) */
 .texto-lateral {
   display: flex;
+  position: relative;
+  bottom: 325px;
   flex-direction: column;
-  position: fixed;
-  left: 30rem;
   justify-content: center;
-  align-items: center;
-  top: 15rem;
+  align-items: flex-start;
   max-width: 600px;
-
+  margin: 0 auto;
+  text-align: left;
+  padding: 2rem 1rem;
 }
 
 .texto-lateral h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -52,48 +57,40 @@
 
 /* Lado do formulário */
 .gerar-nota-form {
-  /* flex: 1; */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: 800px;
-  /* height: 100%; */
-  background-color: #ffffff;
-  background: linear-gradient(0deg, #667eea, 0deg, #764ba2);
+  width: 100%;
+  background-color: #f4f7f6;
+  /* background: linear-gradient(0deg, #667eea, 0deg, #764ba2); */
   color: #1a1a1a;
   padding: 3rem;
-
-
   justify-content: center;
-  /* border-radius: 0 0 0 0; */
-  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
   align-items: center;
-  border-radius: 16px 16px;
-
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
 }
 
 .gerar-nota-form h2 {
   font-size: 2.2rem;
-  color: #333;
+  color: #764ba2;
   margin-bottom: 0.5rem;
 }
 
 .global {
   display: flex;
-    flex: 2.2;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 40px;
   background: linear-gradient(0deg, #667eea, 0deg, #764ba2);
-  color: #1a1a1a;
-
-
+  color: #fff;
 }
 
 .descricao-formulario {
-  color: #667;
-  font-size: 1.5rem;
+  color: #4f4e4e;
+  font-size: 20px;
   margin-bottom: 1.5rem;
 }
 
@@ -105,16 +102,16 @@
 
 .form-group-nf label {
   display: block;
-  font-size: 0.95rem;
+  font-size: 14px;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #333;
+  color: #100101;
 }
 
 .form-group-nf input {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #6e6d6d;
   border-radius: 10px;
   background-color: #f9f9f9;
   font-size: 1rem;
@@ -130,7 +127,7 @@
 .form-group-nf small {
   display: block;
   font-size: 0.8rem;
-  color: #999;
+  color: #4b4b4b;
   margin-top: 0.3rem;
 }
 
@@ -176,20 +173,54 @@ body.gerar-nota-body {
 }
 
 /* Responsivo */
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .gerar-nota-container {
     flex-direction: column;
   }
 
   .gerar-nota-imagem,
   .gerar-nota-form {
-    flex: none;
     width: 100%;
+    max-width: 100%;
     padding: 2rem;
     border-radius: 0;
   }
 
   .texto-lateral {
     text-align: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .texto-lateral h1 {
+    font-size: 2rem;
+  }
+
+  .texto-lateral p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .gerar-nota-form {
+    padding: 2rem 1.2rem;
+  }
+
+  .form-group-nf input {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .btn-submit {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .texto-lateral h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto-lateral p {
+    font-size: 0.9rem;
   }
 }
