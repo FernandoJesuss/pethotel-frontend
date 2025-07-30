@@ -115,17 +115,18 @@ const GerenciadorServicos = () => {
       {/* Lado do conteúdo */}
       <div className="container-servicos">
         <h1 className="titulo">
-          <FaBox /> Gerenciador de Serviços
+          <FaBox className='cx'/> Gerenciador de Serviços
           <p className="subtitulo">Cadastre e gerencie seus pacotes e serviços avulsos de forma rápida e intuitiva</p>
         </h1>
 
         {modoEdicao && (
           <div className="modo-edicao-banner">
             <strong>Modo de Edição Ativo</strong><br />
-            Você está editando o serviço "{servicos[indiceEdicao]?.nome}". Salve suas alterações ou cancele para continuar.
+            <p className='edt'>Você está editando o serviço "{servicos[indiceEdicao]?.nome}". Salve suas alterações ou cancele para continuar.
+              </p>
             <div className="botoes-edicao">
               <button onClick={cancelarEdicao} className="btn-cancelar">Cancelar</button>
-              <button onClick={adicionarServico} className="btn-salvar">Salvar & Continuar</button>
+              <button onClick={adicionarServico} className="btn-salvar">Salvar</button>
             </div>
           </div>
         )}

@@ -1,5 +1,6 @@
 // src/pages/Login.js
 import { useState } from 'react';
+import { GiSniffingDog } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 import '../styles/Login.css';
 
@@ -50,7 +51,8 @@ const Login = ({ onLogin }) => {
   <span className="hotel-pet-pet">Pet</span>
 </h1>
       <div className="login-right">
-        <h1 className="login-title">Bem-vindo de volta!</h1>
+
+        <h1 className="login-title"><GiSniffingDog className='dog' />Bem-vindo de volta!</h1>
         <p className="login-subtitle">Faça login para gerenciar a hospedagem do seu pet</p>
         <form onSubmit={handleSubmit} className="login-form">
 
