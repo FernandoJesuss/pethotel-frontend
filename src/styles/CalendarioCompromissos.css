@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -319,4 +319,477 @@
     opacity: 1;
     transform: translateY(0);
   }
+} */
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.agenda-pro-container {
+  display: flex;
+  flex-wrap: wrap; /* ✅ Permite quebra de linha em telas menores */
+  gap: 20px;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #667fea, #764ba2);
+  color: #0d0d0d;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.agenda-coluna {
+  flex: 1;
+  min-width: 300px; /* ✅ Mantém largura mínima em telas pequenas */
+  background-color: #1e1e2f;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.agenda-coluna:hover {
+  transform: translateY(-4px);
+}
+
+.calendario-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #f0f0ee;
+}
+
+.calendario-box,
+.compromissos-box,
+.painel-box {
+  display: flex;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 15px;
+  border: 2px solid #444;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  transition: transform 0.3s;
+  font-size: 1.3rem;
+  color: #f6f6f5;
+}
+
+.calendario-box:hover,
+.compromissos-box:hover,
+.painel-box:hover {
+  transform: translateY(-3px);
+}
+
+.react-calendar {
+  font-size: 22px;
+  display: contents;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.react-calendar__tile--active {
+  font-size: 25px;
+  font-weight: bold;
+  background: #7e57c2 !important;
+  color: #ffffff !important;
+  border-radius: 6px;
+}
+
+.resumo-datas {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 1.5rem;
+  /* margin-top: 40rem; */
+  padding: 16px 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  align-items: center;
+}
+
+.resumo-datas div {
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.resumo-datas strong {
+  font-size: 1.8rem;
+  color: #ffd700;
+  padding: 16px 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  box-sizing: border-box;
+  font-size: 19px;
+}
+
+/* .react-calendar__navigation {
+  height: 100%;
+  min-width: 44px;
+  border-radius: 12px;
+  background: #f1fbee;
+} */
+
+
+/* Ajuste da barra de navegação do calendário */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem; /* Tamanho uniforme */
+  font-weight: 600;
+  padding: 5px;
+}
+
+/* Título do mês centralizado e tamanho fixo */
+.react-calendar__navigation__label {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.3rem !important;
+  font-weight: bold;
+  min-width: 160px; /* Mantém largura igual para todos os meses */
+  text-transform: capitalize; /* Deixa o nome do mês capitalizado */
+}
+
+/* Botões de navegação (<<, >>) */
+.react-calendar__navigation button {
+  min-width: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.react-calendar__navigation button:hover {
+  color: #7e57c2;
+}
+
+
+.topo-compromissos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topo-compromissos h3 {
+  font-size: 1.4rem;
+  color: #fcfdfd;
+}
+
+.botao-novo {
+  background-color: #7e57c2;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.botao-novo:hover {
+  background-color: #9b72e6;
+}
+
+.input-busca {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2f4430;
+  color: #fff;
+}
+
+.form-compromisso {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.form-compromisso input,
+.form-compromisso button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: rgb(42, 41, 41);
+}
+
+.form-compromisso button {
+  background-color: #7e57c2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.form-compromisso button:hover {
+  background-color: #5c3dbb;
+}
+
+.lista-compromissos .card-compromisso {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column; */
+  background: rgba(4, 0, 10, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-left: 4px solid #26305c;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Lista de compromissos com barra de rolagem */
+.lista-compromissos {
+  max-height: 600px; /* Ajuste a altura conforme seu layout */
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Personalizar a barra de rolagem */
+.lista-compromissos::-webkit-scrollbar {
+  width: 8px;
+}
+
+.lista-compromissos::-webkit-scrollbar-thumb {
+  background-color: #7e57c2;
+  border-radius: 4px;
+}
+
+.lista-compromissos::-webkit-scrollbar-track {
+  background: #2f2f40;
+}
+
+.lista-compromissos,
+.card-compromisso:hover {
+  transform: translateX(4px);
+}
+
+.card-compromisso.concluido {
+  background-color: #d2f8d2;
+  border-left: 6px solid #4caf50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.botoes-compromisso {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.botoes-compromisso button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.botoes-compromisso button:hover {
+  background-color: #7e57c2;
+}
+
+.card-compromisso.concluido .hora-compromisso {
+  color: #4caf50;
+}
+
+.card-compromisso.concluido strong {
+  color: #2d5c33;
+  text-decoration: line-through;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.hora-compromisso {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: bold;
+  color: #ffd700;
+  font-size: 18px;
+}
+
+.info-compromisso strong {
+  display: flex;
+  position: relative;
+  bottom: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.vazio {
+  font-size: 25px;
+  font-style: italic;
+  color: #eae9e9;
+}
+
+.eventos-box ul,
+.lembretes-box ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.eventos-box li,
+.lembretes-box li {
+  margin-bottom: 10px;
+  color: #eae9e9;
+}
+
+
+/* Próximos eventos com barra de rolagem */
+.eventos-box ul {
+  max-height: 200px; /* Ajuste conforme necessidade */
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Estilização da barra de rolagem nos próximos eventos */
+.eventos-box ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.eventos-box ul::-webkit-scrollbar-thumb {
+  background-color: #7e57c2;
+  border-radius: 4px;
+}
+
+.eventos-box ul::-webkit-scrollbar-track {
+  background: #2f2f40;
+}
+
+.estatistica {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.estatistica div {
+  text-align: center;
+}
+
+.estatistica strong {
+  display: block;
+  font-size: 1.6rem;
+  color: #7e57c2;
+}
+
+.clima-box,
+.eventos-box,
+.estatisticas-box,
+.lembretes-box {
+  background-color: #292943;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ MEDIA QUERIES PARA RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .agenda-pro-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .agenda-coluna {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .topo-compromissos h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendario-box,
+  .compromissos-box,
+  .painel-box {
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .form-compromisso {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .form-compromisso input,
+  .form-compromisso button {
+    width: 100%;
+  }
+
+  .resumo-datas strong {
+    font-size: 1.3rem;
+  }
+
+  .hora-compromisso {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .agenda-pro-container {
+    padding: 10px;
+  }
+
+  .agenda-coluna {
+    padding: 15px;
+  }
+
+  .botao-novo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-compromisso strong {
+    font-size: 2rem;
+  }
+
+  .vazio {
+    font-size: 18px;
+  }
+}
+
