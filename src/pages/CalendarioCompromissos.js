@@ -144,10 +144,25 @@ const CalendarioCompromissos = () => {
               <li>Nenhum evento futuro</li>
             ) : (
               compromissosFuturos.map((e, idx) => (
-                <li key={idx}><strong>{e.data} {e.hora}</strong> {e.descricao}</li>
+                <li key={idx}><strong>{e.data} {e.hora}</strong>{e.descricao}</li>
               ))
             )}
           </ul>
+
+          {/* <h4>📌 Próximos Eventos</h4>
+<ul>
+  {compromissosFuturos.length === 0 ? (
+    <li>Nenhum evento futuro</li>
+  ) : (
+    compromissosFuturos.map((evento, idx) => (
+      <li key={idx}>
+        <strong className='data'>Data:</strong> {evento.data} | <strong className='hora'>Hora:</strong> {evento.hora}
+        <br />
+        <strong className='descricao'>Descrição:</strong> {evento.descricao}
+      </li>
+    ))
+  )}
+</ul> */}
         </div>
 
         <div className="estatisticas-box">
