@@ -131,7 +131,7 @@ body.cadastro-tutor-page {
 .form-group select,
 .form-group textarea {
   width: 100%;
-  /* padding: 16px 18px; */
+  padding: 16px 18px;
   border-radius: 14px;
   border: 1px solid #ccc;
   font-size: 12px;
