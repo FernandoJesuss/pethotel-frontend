@@ -18,6 +18,14 @@
   transition: var(--transition);
 }
 
+.bd {
+ width: 150px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: -60px;
+ 
+}
+
 .header-hed::before {
   content: '';
   position: absolute;
@@ -41,27 +49,6 @@
   z-index: 1;
 }
 
-.logo-icon-log {
-  width: 3rem;
-  height: 3rem;
-  background: linear-gradient(135deg, #fff 0%, #f1f5f9 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
-}
-
-.logo-icon-log::after {
-  content: '🐕';
-  font-size: 1.5rem;
-}
-
-.logo-icon-log:hover {
-  transform: scale(1.1) rotate(5deg);
-}
-
 .logo-section-log h1 {
   font-size: 2rem;
   font-weight: 800;
@@ -76,6 +63,8 @@
 }
 
 .place {
+  color: white;
+  top: -12px;
   padding: 0;
   margin: 0;
   font-size: 2rem;
@@ -85,8 +74,9 @@
 
 .amigo {
   margin: 0;
-  bottom: 25px;
-  left: 5rem;
+  color: white;
+  bottom: 45px;
+  left: 8.6rem;
   font-size: 1rem;
   position: absolute;
 
@@ -237,7 +227,6 @@
   background: linear-gradient(135deg, rgba(255, 160, 0, 0.05) 0%, transparent 100%);
   pointer-events: none;
 }
-
 
 .badge-ge {
   position: absolute;
@@ -506,7 +495,7 @@
   font-size: 1rem;
   margin-bottom: 1rem;
   background-color: #f6f4f5df;
-   font-family: inherit;
+  font-family: inherit;
 }
 
 .pet-info-fa input:focus,
@@ -515,7 +504,7 @@
 .owner-info-ow textarea:focus {
   outline: none;
   border-color: #60a5fa;
-  
+
 }
 
 .pet-info-fa textarea,

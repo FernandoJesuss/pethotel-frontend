@@ -98,7 +98,7 @@ const Dashboard = () => {
               <div className="icon blue">📊</div>
               <div>
                 <h3>Relatório de Serviços</h3>
-                <p>Visualize relatórios detalhados sobre performance e métricas dos serviços</p>
+                <p>Visualize relatórios detalhados sobre performance</p>
               </div>
             </Link>
           </div>
@@ -107,7 +107,7 @@ const Dashboard = () => {
               <div className="icon blue">🔧</div>
               <div>
                 <h3>Gerenciar Serviços</h3>
-                <p>Administre todos os serviços ativos, edite informações e status</p>
+                <p>Administre todos os serviços ativos</p>
               </div>
             </Link>
           </div>
@@ -116,7 +116,7 @@ const Dashboard = () => {
               <div className="icon blue">📅</div>
               <div>
                 <h3>Calendário de Compromissos</h3>
-                <p>Organize e visualize todos os compromissos e agendamentos</p>
+                <p>Organize e visualize todos os compromissos</p>
               </div>
             </Link>
           </div>
