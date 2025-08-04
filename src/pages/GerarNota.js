@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import '../styles/GerarNota.css';
-import nfTutor from '../assets/nftutor.png';
+import nf from '../assets/nf.png';
 
 const GerarNota = () => {
   const { token } = useAuth();
@@ -86,7 +86,7 @@ const GerarNota = () => {
   return (
     
     <div className="gerar-nota-container">
-      <div className="gerar-nota-imagem" style={{ backgroundImage: `url(${nfTutor})` }}>
+      <div className="gerar-nota-imagem" style={{ backgroundImage: `url(${nf})` }}>
         
         <div className="texto-lateral">
           

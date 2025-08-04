@@ -114,9 +114,9 @@ const GerenciadorServicos = () => {
 
       {/* Lado do conteúdo */}
       <div className="container-servicos">
-        <h1 className="titulo">
+        <h1 className="titulo-ge">
           <FaBox className='cx'/> Gerenciador de Serviços
-          <p className="subtitulo">Cadastre e gerencie seus pacotes e serviços avulsos de forma rápida e intuitiva</p>
+          <p className="subtitulo-ge">Cadastre e gerencie seus pacotes e serviços avulsos de forma rápida e intuitiva</p>
         </h1>
 
         {modoEdicao && (
