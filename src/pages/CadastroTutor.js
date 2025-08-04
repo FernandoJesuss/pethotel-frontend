@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import '../styles/CadastroTutor.css';
-import tutorEDog from '../assets/tutor-dogg.png'; // imagem gerada
+import cadastro from '../assets/cadastro.png'; // imagem gerada
 
 const CadastroTutor = () => {
   const { token } = useAuth();
@@ -96,7 +96,7 @@ const CadastroTutor = () => {
   return (
     <div className="cadastro-split-container">
       <div className="imagem-lateral">
-        <img src={tutorEDog} alt="Tutor com cachorro" />
+        <img src={cadastro} alt="Tutor com cachorro" />
       </div>
       <div className="cadastro-container">
         <div className="form-box">

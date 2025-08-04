@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,9 +16,9 @@ body.cadastro-tutor-page {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-}
+} */
 
-
+/* 
 .cadastro-split-container {
   display: flex;
   flex-direction: row;
@@ -35,14 +35,14 @@ body.cadastro-tutor-page {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background: linear-gradient(0deg, #667eea, #764ba2);
+ 
   color: #1a1a1a;
 }
 
 .imagem-lateral img {
   width: 100%;
   max-width: 100%;
-  max-height: 90%;
+  max-height: 2000px;
   object-fit: contain;
   border: none;
 }
@@ -55,7 +55,7 @@ body.cadastro-tutor-page {
   align-items: center;
   justify-content: center;
   padding: 30px;
-  background: linear-gradient(0deg, #667fea, #764ba2);
+ 
   color: #1a1a1a;
   min-height: 100vh;
   width: 100%;
@@ -97,7 +97,91 @@ body.cadastro-tutor-page {
   border-radius: 2px;
   margin: 16px auto;
   width: 100%;
+} */
+
+/* CadastroTutor.css */
+/* .cadastro-split-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../assets/cadastro.png') no-repeat center center;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center center;
+ 
+    backdrop-filter: blur(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+} */
+
+.cadastro-split-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* camada de opacidade */
+    url('../assets/cadastro.png') no-repeat center center;
+  background-size: 100% 100%;
+  background-position: center center;
+
+  backdrop-filter: blur(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
+
+
+/* Remove a imagem lateral já que ela vira background */
+.imagem-lateral {
+  display: none;
+  
+}
+
+/* Caixa do formulário */
+.cadastro-container {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.95);
+  opacity: 0.90;
+  height: 104%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes visuais */
+.form-box {
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.linha-roxa {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
 
 .section-title {
   font-size: 15px;
@@ -145,7 +229,7 @@ body.cadastro-tutor-page {
   color: #888;
   font-style: italic;
   font-size: 12px;
-  
+
 }
 
 .form-group input:focus,
@@ -179,7 +263,7 @@ body.cadastro-tutor-page {
 }
 
 .submit-btn {
-   position: relative;
+  position: relative;
   bottom: 17px;
   width: 100%;
   padding: 14px;
@@ -203,7 +287,7 @@ body.cadastro-tutor-page {
 
 .success {
   color: #4CAF50;
-   position: relative;
+  position: relative;
   bottom: 28px;
   font-weight: 500;
   font-size: 14px;
