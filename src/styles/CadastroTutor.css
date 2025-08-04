@@ -18,7 +18,7 @@ body.cadastro-tutor-page {
   overflow-x: hidden;
 }
 
-/* Container principal dividido */
+
 .cadastro-split-container {
   display: flex;
   flex-direction: row;
@@ -28,7 +28,7 @@ body.cadastro-tutor-page {
   flex-wrap: nowrap;
 }
 
-/* Lado da imagem */
+
 .imagem-lateral {
   flex: 1;
   display: flex;
@@ -47,7 +47,7 @@ body.cadastro-tutor-page {
   border: none;
 }
 
-/* Lado do formulário */
+
 .cadastro-container {
   flex: 1.2;
   display: flex;
@@ -229,7 +229,6 @@ body.cadastro-tutor-page {
   border-radius: 8px;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 1024px) {
   .form-box {
     padding: 24px 28px;

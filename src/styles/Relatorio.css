@@ -130,9 +130,7 @@ body {
 .data-inicial-filter {
   display: flex;
   font-size: 12px;
-  /* background-color: #28a745; */
-  /* padding: auto; */
-  width: 100%;
+    width: 100%;
   min-width: 68px;
   position: relative;
   bottom: 20px;
@@ -153,7 +151,7 @@ body {
 .data-final-filter {
   display: flex;
   font-size: 12px;
-  /* padding: auto; */
+ 
    width: 100%;
   min-width: 68px;
   position: relative;
@@ -328,9 +326,7 @@ body {
   margin-top: 40px;
 }
 
-/* =============================
-   RESPONSIVIDADE
-   ============================= */
+
 @media (max-width: 1024px) {
   .header {
     font-size: 1.2rem;

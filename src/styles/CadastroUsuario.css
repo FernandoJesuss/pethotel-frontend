@@ -4,15 +4,14 @@
     box-sizing: border-box;
     overflow: hidden;
 } */
-
+/* 
 .cadastro-container-es {
     display: flex;
     height: 100vh;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2e7d32;
-    /* margin-bottom: 2rem; */
-    background-color: #e8f5e9;
+    color: #fdfdfd;
+   
     font-family: sans-serif;
 
 }
@@ -49,7 +48,7 @@
     margin: 0.1rem;
     width: 100%;
     padding: 16px 20px;
-    border: 2px solid #e8f5e8;
+    border: 2px solid #fdfdfd;
     border-radius: 12px;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
@@ -59,8 +58,8 @@
 }
 
 .cadastro-form input:focus {
-    border-color: #4a7c4a;
-    box-shadow: 0 0 0 4px rgba(74, 124, 74, 0.1);
+    border-color: #550674a6;
+    box-shadow: 0 0 0 4px rgba(131, 78, 134, 0.1);
     transform: translateY(-2px);
 }
 
@@ -107,4 +106,4 @@
 
 .cadastro-form button:active {
     transform: translateY(-1px);
-}
+} */

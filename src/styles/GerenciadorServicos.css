@@ -20,14 +20,7 @@ html, body {
 }
 
 .imagem-servicos {
-  /* flex: 1.1;
-  width: 100%;
   
-  background-size: cover;
-  background-position: center;
-  
-  min-height: 300px; */
-
 
 
 
@@ -49,16 +42,7 @@ html, body {
 }
 
 .container-servicos {
-  /* flex: 1;
-  max-width: 600px;
-  margin: auto;
-  background-color: #fff;
-  border: 2px solid #a8a5a5;
-  border-radius: 25px;
-  padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  width: 100%; */
-
+ 
 
 
 
@@ -67,9 +51,7 @@ html, body {
 
 display: grid;
   width: 100%;
-  /* margin-left: 12rem; */
-  /* max-width: 1000px; */
-  /* margin-top: 500px; */
+ 
   
 
  flex: 1;
@@ -184,9 +166,9 @@ h3 {
   display: flex;
   flex-direction: column;
   position: relative;
-  /* bottom: 25px; */
+  
   width: 100%;
-  /* height: 50%; */
+  
   background: #f8fafc;
   border-radius: 12px;
   padding: 10px;
@@ -415,12 +397,11 @@ label {
   gap: 12px;
   margin-top: 24px;
   padding-top: 20px;
-  /* border-top: 2px solid #0078ef; */
+  
 }
 
 .resumo:hover {
-  /* border-color: #e2e8f0; */
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+ 
   transform: translateY(-1px);
 }
 
@@ -435,7 +416,7 @@ label {
   bottom: 12px;
   border-radius: 12px;
   flex: 1;
-  /* width: 115px; */
+
   min-width: 90px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   background: linear-gradient(135deg, #f8fafc, #f1f5f9);
@@ -456,7 +437,6 @@ label {
   font-size: 10px;
 }
 
-/* ================= RESPONSIVIDADE ================ */
 @media (max-width: 1024px) {
   .imagem-servicos {
     min-height: 250px;

@@ -7,7 +7,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Lado da imagem */
+
 .gerar-nota-imagem {
   flex: 1.1;
   background-size: contain;
@@ -24,7 +24,7 @@
   border: none;
 }
 
-/* Texto lateral (antes fixo, agora adaptável) */
+
 .texto-lateral {
   display: flex;
   position: relative;
@@ -55,7 +55,7 @@
   opacity: 0.95;
 }
 
-/* Lado do formulário */
+
 .gerar-nota-form {
   flex: 1;
   display: flex;
@@ -63,7 +63,7 @@
   max-width: 800px;
   width: 100%;
   background-color: #f4f7f6;
-  /* background: linear-gradient(0deg, #667eea, 0deg, #764ba2); */
+  
   color: #1a1a1a;
   padding: 3rem;
   justify-content: center;
@@ -94,7 +94,7 @@
   margin-bottom: 1.5rem;
 }
 
-/* Grupo de campos */
+
 .form-group-nf {
   width: 100%;
   margin-bottom: 15px;
@@ -131,7 +131,7 @@
   margin-top: 0.3rem;
 }
 
-/* Erros */
+
 .erro {
   color: #e63946;
   font-size: 0.85rem;
@@ -139,7 +139,7 @@
   padding-left: 4px;
 }
 
-/* Botão */
+
 .btn-submit {
   background: linear-gradient(to right, #6c63ff, #7f53ac);
   color: white;
@@ -157,7 +157,7 @@
   background: linear-gradient(to right, #7f53ac, #6c63ff);
 }
 
-/* Mensagem de sucesso */
+
 .mensagem-sucesso {
   color: #2dce89;
   font-size: 1rem;
@@ -172,7 +172,7 @@ body.gerar-nota-body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Responsivo */
+
 @media (max-width: 1024px) {
   .gerar-nota-container {
     flex-direction: column;
