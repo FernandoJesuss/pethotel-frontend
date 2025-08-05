@@ -350,6 +350,50 @@ body {
 }
 
 @media (max-width: 480px) {
+.client-filter, .service-filter {
+  font-size: 15px;
+  font-weight: 300;
+  right: 1px;
+
+}
+
+ .data-inicial-filter, .data-final-filter {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+ font-size: 15px;
+  font-weight: 300;
+  left: 90px;
+
+ }
+  
+  #service-filter, 
+  #client-filter,
+   #data-inicial-filter,
+    #data-final-filter {
+  display: flex;
+  left: 2px;
+  bottom: 30px;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+   position: relative;
+   min-width: 180px;
+   background: #28a745;
+  /* right: 8rem; */
+}
+  .filter-group {
+    display: flex;
+    margin-top: 45px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .relatorio-container {
     width: 95%;
     padding: 15px;
@@ -365,6 +409,30 @@ body {
   }
 
   .btn-filtrar {
+      display: flex;
+  left: 2px;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+   position: relative;
+   min-width: 180px;
     font-size: 13px;
   }
 }
+
+@media (max-width: 400px) {
+   .data-inicial-filter, .data-final-filter {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+ font-size: 15px;
+  font-weight: 300;
+  left: 50px;
+
+ }
+}
+
+
+

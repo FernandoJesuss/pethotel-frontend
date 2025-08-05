@@ -40,9 +40,12 @@
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -54,7 +57,7 @@
     perspective: 1400px;
     font-family: 'Segoe UI', sans-serif;
     background-image: url('../assets/login1.png');
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
@@ -106,10 +109,10 @@ p {
     margin-bottom: 3rem;
 }
 
-#login-label  {
+#login-label {
     position: relative;
     top: -42px;
-} 
+}
 
 .login-principal {
     top: -60px;
@@ -134,14 +137,14 @@ hr {
     border: none;
     height: 0.20px;
     background-color: #f5f2f245;
-    bottom:38px;
+    bottom: 38px;
     right: 32px;
     width: 85%;
 }
 
 .linka {
     top: -70px;
-    padding: 0  10px;
+    padding: 0 10px;
 }
 
 .login360-cube {
@@ -151,7 +154,7 @@ hr {
     transform-style: preserve-3d;
     transition: transform 0.9s ease-in-out;
     z-index: 1;
-    left: 200px; 
+    left: 200px;
 }
 
 .cube-face {
@@ -169,13 +172,21 @@ hr {
     text-align: center;
 }
 
-.cube-front { transform: rotateY(0deg) translateZ(200px); }
-.cube-right { transform: rotateY(90deg) translateZ(200px); }
-.cube-left { transform: rotateY(-90deg) translateZ(200px); }
+.cube-front {
+    transform: rotateY(0deg) translateZ(200px);
+}
+
+.cube-right {
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.cube-left {
+    transform: rotateY(-90deg) translateZ(200px);
+}
 
 .login360-form {
     display: flex;
-    padding: 50px  21px 20px  20px;
+    padding: 50px 21px 20px 20px;
     flex-direction: column;
     gap: 12px;
     margin-top: -50px;
@@ -186,9 +197,8 @@ hr {
     position: relative;
     left: 0.50rem;
     top: 0.9rem;
-     color: #5c04a9;
-    /* color: #6c5ce7; */
-    font-weight: 500;
+    color: #5c04a9;
+       font-weight: 500;
     margin-bottom: 8px;
     font-size: 0.9rem;
 }
@@ -246,15 +256,14 @@ hr {
 
 .login-links button {
     width: auto;
-     color: #5c04a9;
-    /* color: #5039fd; */
+    color: #5c04a9;
     border: none;
     text-decoration: none;
     font-size: 0.7rem;
     font-weight: 600;
     position: relative;
-    background: transparent; 
-    outline: none; 
+    background: transparent;
+    outline: none;
 }
 
 .login-links button:hover {
@@ -275,4 +284,184 @@ hr {
 .login-links button:hover::after {
     width: 100%;
     left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== AJUSTES PARA NOTEBOOK E TELAS GRANDES (default já funciona) ===== */
+@media (max-width: 1440px) {
+    .login360-cube {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+}
+
+/* ===== AJUSTE PARA IPHONE 14 PRO MAX ===== */
+@media (max-width: 1280px) {
+    .login360-cube {
+        width: 60% !important;
+        max-width: 450px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+}
+
+/* ===== AJUSTE PARA PIXEL 7 PRO ===== */
+@media (max-width: 1040px) {
+    .login360-cube {
+        width: 85% !important;
+        max-width: 420px !important;
+        min-height: 430px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+}
+
+/* ===== AJUSTE PARA IPHONE 14 PRO ===== */
+@media (max-width: 853px) {
+    .login360-cube {
+        width: 92% !important;
+        max-width: 380px !important;
+        min-height: 420px !important;
+        left: 50% !important;
+        transform: translateX(-63%) !important;
+    }
+
+    .hotel-pet {
+        font-size: 3.5rem !important;
+        top: 8px !important;
+    }
+}
+
+/* ===== PARA TELAS MUITO PEQUENAS (<= 400px) ===== */
+@media (max-width: 400px) {
+    
+.login-mobile-box {
+    margin-top: 110px;
+  width: 100%;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+    .login360-cube {
+        width: 95% !important;
+        max-width: 320px !important;
+        min-height: 380px !important;
+        left: 50% !important;
+        transform: translateX(-62%) !important;
+    }
+
+    .hotel-pet {
+        font-size: 3rem !important;
+        top: 5px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======== LOGIN MOBILE ======== */
+.hotel-pet-pet {
+    top: -35px;
+    right: 1.5px;
+}
+
+.mobile-version {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background: url('../assets/login.png') no-repeat center center;
+  background-size: cover;
+}
+
+.login-mobile-box {
+  width: 100%;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.login-mobile-box h2 {
+  text-align: center;
+  color: #6a0dad;
+}
+
+.login-subtitle {
+    top: 1px;
+}
+
+.login-mobile-box .login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-mobile-box button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #8a2be2, #6a0dad);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-mobile-box button:hover {
+  background: linear-gradient(to right, #9b3ff3, #7c12e3);
 }

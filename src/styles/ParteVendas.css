@@ -636,6 +636,56 @@
 }
 
 @media (max-width: 480px) {
+
+  .logo-section-log {
+    display: block;
+    
+   
+  }
+
+  .bd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position:relative;
+     width:100%;
+     height: 100%;
+     /* max-width: 800px; */
+    /* right: 45px; */
+  }
+
+    .place {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px;
+    top: -50px;
+  }
+
+  .amigo {
+    display: none;
+  }
+
+  .contact-info-info {
+    margin-top: 10px;
+  }
+  .header-hed {
+    display: grid;
+     grid-template-columns: 1fr;
+  }
+  #checkin, #checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    bottom: 55px;
+    min-width: 100%;
+    right: -1px;
+  }
   .package-price {
     font-size: 2rem;
   }

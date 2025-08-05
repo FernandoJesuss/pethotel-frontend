@@ -1,4 +1,4 @@
-.cadastro-split-container {
+/* .cadastro-split-container {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -252,5 +252,338 @@
 
   .section-title {
     font-size: 18px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cadastro-split-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+              url('../assets/cadastro.png') no-repeat center center;
+  background-size: cover; /* Alterado para 'cover' para melhor adaptação */
+  backdrop-filter: blur(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.imagem-lateral {
+  display: none; /* Mantenha oculto em telas menores */
+}
+
+.cadastro-container {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.95);
+  opacity: 0.90;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 1rem; /* Usando rem */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-box {
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.linha-roxa {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1rem; /* Usando rem */
+  margin: 24px 0 12px;
+  color: #4a148c;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Melhor legibilidade */
+  gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #0a0000;
+  font-size: 0.875rem; /* Usando rem */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  font-size: 0.75rem; /* Usando rem */
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: border 0.2s ease-in-out;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888;
+  font-style: italic;
+  font-size: 0.75rem; /* Usando rem */
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 60px;
+}
+
+.checkbox {
+  display: flex;
+  position: relative;
+  bottom: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 16px 0 20px;
+  font-size: 0.75rem; /* Usando rem */
+  color: #444;
+}
+
+.checkbox input[type="checkbox"] {
+  display: flex;
+  width: 1rem;
+  margin-top: 1px;
+}
+
+.submit-btn {
+  position: relative;
+  bottom: 17px;
+  width: 100%;
+  padding: 14px;
+  font-size: 0.875rem; /* Usando rem */
+  font-weight: bold;
+  background: linear-gradient(to right, #7e57c2, #ab47bc);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #6a1b9a, #8e24aa);
+}
+
+.success {
+  color: #4CAF50;
+  position: relative;
+  bottom: 28px;
+  font-weight: 500;
+  font-size: 0.875rem; /* Usando rem */
+  text-align: center;
+  margin-top: 16px;
+  background-color: #e6f5e6;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #b2d8b2;
+}
+
+.error {
+  color: #d32f2f;
+  position: relative;
+  bottom: 28px;
+  background-color: #fdecea;
+  border: 1px solid #f5c6cb;
+  font-weight: 500;
+  font-size: 0.875rem; /* Usando rem */
+  text-align: center;
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  .form-box {
+    padding: 24px 28px;
+  }
+
+  .logo {
+    font-size: 3rem; /* Usando rem */
+  }
+
+  .slogan {
+    font-size: 1.5rem; /* Usando rem */
+  }
+
+  .form-group label {
+    font-size: 1rem; /* Usando rem */
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1rem; /* Usando rem */
+    padding: 14px 16px;
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    font-size: 1rem; /* Usando rem */
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr; /* Um item por linha em telas menores */
+  }
+}
+
+@media (max-width: 768px) {
+  .cadastro-split-container {
+    flex-direction: column; /* Muda a direção do flex em telas menores */
+  }
+
+  .imagem-lateral {
+    display: none; /* Mantenha oculto em telas menores */
+  }
+
+  .cadastro-container {
+    flex: 1;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .form-box {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 2.5rem; /* Usando rem */
+  }
+
+  .slogan {
+    font-size: 1.25rem; /* Usando rem */
+  }
+
+  .section-title {
+    font-size: 1.125rem; /* Usando rem */
+  }
+}
+
+@media (max-width: 480px) {
+  .cadastro-container {
+    padding: 15px; /* Ajuste para telas muito pequenas */
+  }
+
+  .logo {
+    font-size: 2rem; /* Usando rem */
+  }
+
+  .slogan {
+    font-size: 1rem; /* Usando rem */
+  }
+
+  .section-title {
+    font-size: 1rem; /* Usando rem */
+  }
+
+  .form-group label {
+    font-size: 0.875rem; /* Usando rem */
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.875rem; /* Usando rem */
+  }
+
+
+
+
+
+}
+
+
+  @media (max-width: 400px) {
+  .cadastro-container {
+    padding: 10px; /* Ajuste para telas muito pequenas */
+  }
+
+  .logo {
+    font-size: 2rem; /* Usando rem */
+  }
+
+  .slogan {
+    font-size: 1rem; /* Usando rem */
+  }
+
+  .section-title {
+    font-size: 1rem; /* Usando rem */
+  }
+
+  .form-group label {
+    font-size: 0.875rem; /* Usando rem */
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.875rem; /* Usando rem */
   }
 }

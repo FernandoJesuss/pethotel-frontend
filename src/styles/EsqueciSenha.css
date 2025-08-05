@@ -1,16 +1,16 @@
-/* .senha-container {
+.senha-container {
     display: flex;
     height: 100vh;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #2e7d32;
+    color: #6d2e7d;
     background-color: #e8f5e9;
     font-family: sans-serif;
 }
 
 .senha-left {
     flex: 1;
-    background-image: url('../assets/dog-hotel-senha.png');
+    background-image: url('../assets/esq.png');
     background-size: cover;
     background-position: center;
 }
@@ -49,7 +49,7 @@
 }
 
 .senha-form input:focus {
-    border-color: #4a7c4a;
+    border-color: #8549a0;
     box-shadow: 0 0 0 4px rgba(74, 124, 74, 0.1);
     transform: translateY(-2px);
 }
@@ -61,7 +61,7 @@
 .senha-form button {
     width: 100%;
     padding: 18px;
-    background: linear-gradient(135deg, #4a7c4a 0%, #2d5a2d 100%);
+    background: linear-gradient(135deg, #b61ae1 0%, #532d5a 100%);
     color: white;
     border: none;
     border-radius: 12px;
@@ -97,4 +97,162 @@
 
 .senha-form button:active {
     transform: translateY(-1px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== PARA TELAS MUITO PEQUENAS (<= 400px) ===== */
+/* @media (max-width: 400px) {
+
+    .login-mobile-box {
+        margin-top: 110px;
+        width: 100%;
+        max-width: 380px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .login360-cube {
+        width: 95% !important;
+        max-width: 320px !important;
+        min-height: 380px !important;
+        left: 50% !important;
+        transform: translateX(-62%) !important;
+    }
+
+    .hotel-pet {
+        font-size: 3rem !important;
+        top: 5px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======== LOGIN MOBILE ======== */
+.hotel-pet-pet {
+    top: -35px;
+    right: 1.5px;
+}
+
+.senha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vw;
+    perspective: 1400px;
+    padding: 10px;
+    background: url('../assets/esq.png') no-repeat center center;
+    background-size: cover;
+    background-size: 100%;
+    background-position: center center;
+    bottom: 105px;
+    transition: background-image 0.8s ease-in-out;
+    position: relative;
+}
+
+.senha-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 700px;
+
+
+
+    width: 100%;
+    max-width: 380px;
+    background: rgba(255, 255, 255, 0.9);
+    /* padding: 25px; */
+    border-radius: 12px;
+
+}
+
+hr {
+    display: none;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.login-mobile-box h2 {
+    text-align: center;
+    color: #6a0dad;
+}
+
+.login-links a {
+     font-size: 15px;
+    font-weight: 300;
+    text-decoration: none; 
+}
+
+
+
+/* .login-subtitle {
+    top: 1px;
+} */
+
+/* .login-mobile-box .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+} */
+
+/* .login-mobile-box button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #8a2be2, #6a0dad);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+} */
+
+/* .login-mobile-box button:hover {
+    background: linear-gradient(to right, #9b3ff3, #7c12e3);
 } */
