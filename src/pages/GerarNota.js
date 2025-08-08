@@ -17,12 +17,12 @@ const GerarNota = () => {
 
   const validarCampos = () => {
     const novosErros = {};
-    if (!dadosNota.nomeCliente.trim()) novosErros.nomeCliente = 'Informe o nome do cliente.';
-    if (!dadosNota.servico.trim()) novosErros.servico = 'Informe o serviço prestado.';
+    if (!dadosNota.nomeCliente.trim()) novosErros.nomeCliente = 'Nome do cliente é obrigatório.';
+    if (!dadosNota.servico.trim()) novosErros.servico = 'Descrição do serviço é obrigatório';
     if (!dadosNota.valorRaw || isNaN(dadosNota.valorRaw) || parseFloat(dadosNota.valorRaw) <= 0) {
-      novosErros.valor = 'Informe um valor válido.';
+      novosErros.valor = 'Valor deve ser maior que zero.';
     }
-    if (!dadosNota.data) novosErros.data = 'Informe a data.';
+    if (!dadosNota.data) novosErros.data = 'Data de emissão é obrigatória';
     setErros(novosErros);
     return Object.keys(novosErros).length === 0;
   };
@@ -84,78 +84,74 @@ const GerarNota = () => {
   };
 
   return (
-    
+
     <div className="gerar-nota-container">
       <div className="gerar-nota-imagem" style={{ backgroundImage: `url(${nf})` }}>
-        
+
         <div className="texto-lateral">
-          
-          <h1>Gerador de Nota Fiscal</h1>
-          <p>
-            Gere suas notas fiscais de forma rápida, simples e segura. Preencha os dados ao lado e tenha sua nota fiscal pronta em segundos.
-          </p>
         </div>
       </div>
-      <div className='global'> 
-      <form className="gerar-nota-form" onSubmit={handleSubmit}>
-        <h2>Dados da Nota Fiscal</h2>
-        <p className="descricao-formulario">Preencha as informações abaixo para gerar sua nota</p>
+      <div className='global'>
+        <form className="gerar-nota-form" onSubmit={handleSubmit}>
+          
+          <h1>🧾 Gerador de Nota Fiscal</h1>
+          <p className="descricao-formulario">Crie suas notas fiscais de forma rápida, simples e segura</p>
 
-        <div className="form-group-nf">
-          <label>Nome do Cliente *</label>
-          <input
-            type="text"
-            name="nomeCliente"
-            placeholder="Digite o nome completo do cliente"
-            value={dadosNota.nomeCliente}
-            onChange={handleChange}
-          />
-          {erros.nomeCliente && <p className="erro">{erros.nomeCliente}</p>}
-        </div>
+          <div className="form-group-nf">
+            <label>Nome do Cliente *</label>
+            <input
+              type="text"
+              name="nomeCliente"
+              placeholder="Digite o nome completo do cliente"
+              value={dadosNota.nomeCliente}
+              onChange={handleChange}
+            />
+            {erros.nomeCliente && <p className="erro">{erros.nomeCliente}</p>}
+          </div>
 
-        <div className="form-group-nf">
-          <label>Serviço Prestado *</label>
-          <input
-            type="text"
-            name="servico"
-            placeholder="Descreva o serviço realizado"
-            value={dadosNota.servico}
-            onChange={handleChange}
-          />
-          <small>Exemplo: Consultoria em Marketing Digital</small>
-          {erros.servico && <p className="erro">{erros.servico}</p>}
-        </div>
+          <div className="form-group-nf">
+            <label>Serviço Prestado *</label>
+            <input
+              type="text"
+              name="servico"
+              placeholder="Descreva o serviço realizado"
+              value={dadosNota.servico}
+              onChange={handleChange}
+            />
+            <small>Exemplo: Consultoria em Marketing Digital</small>
+            {erros.servico && <p className="erro">{erros.servico}</p>}
+          </div>
 
-        <div className="form-group-nf">
-          <label>Valor (R$) *</label>
-          <input
-            type="text"
-            name="valor"
-            placeholder="R$ 0,00"
-            value={dadosNota.valor}
-            onChange={handleChange}
-          />
-          {erros.valor && <p className="erro">{erros.valor}</p>}
-        </div>
+          <div className="form-group-nf">
+            <label>Valor (R$) *</label>
+            <input
+              type="text"
+              name="valor"
+              placeholder="R$ 0,00"
+              value={dadosNota.valor}
+              onChange={handleChange}
+            />
+            {erros.valor && <p className="erro">{erros.valor}</p>}
+          </div>
 
-        <div className="form-group-nf">
-          <label>Data de Emissão *</label>
-          <input
-            type="date"
-            name="data"
-            value={dadosNota.data}
-            onChange={handleChange}
-          />
-          {erros.data && <p className="erro">{erros.data}</p>}
-        </div>
+          <div className="form-group-nf">
+            <label>Data de Emissão *</label>
+            <input
+              type="date"
+              name="data"
+              value={dadosNota.data}
+              onChange={handleChange}
+            />
+            {erros.data && <p className="erro">{erros.data}</p>}
+          </div>
 
-        <button className="btn-submit" type="submit">
-          📄 Gerar Nota Fiscal
-        </button>
+          <button className="btn-submit" type="submit">
+            📄 Gerar Nota Fiscal
+          </button>
 
-        {mensagem && <p className="mensagem-sucesso">{mensagem}</p>}
-      </form>
-    </div>
+          {mensagem && <p className="mensagem-sucesso">{mensagem}</p>}
+        </form>
+      </div>
     </div>
   );
 };

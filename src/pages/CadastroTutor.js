@@ -100,7 +100,7 @@ const CadastroTutor = () => {
       </div>
       <div className="cadastro-container">
         <div className="form-box">
-          <h1 className="logo">🐾 <span>PetCare</span> 🐾</h1>
+          <h1 className="logo">🐾 <span className='title-span'>PetCare</span> 🐾</h1>
           <p className="slogan">Cadastre seu pet com carinho e atenção aos detalhes</p>
           <div className="linha-roxa"></div>
 

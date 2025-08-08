@@ -1,12 +1,11 @@
 .gerar-nota-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../assets/nf.png') no-repeat center center;
-  background-size: 100% 100%;
-  background-position: center center;
+  background-size: cover;
   backdrop-filter: blur(1px);
   display: flex;
   align-items: center;
@@ -22,9 +21,6 @@
   position: relative;
   background-color: rgba(255, 255, 255, 0.96);
   padding: 40px;
-  bottom: 4rem;
-  right: 14rem;
-  opacity: 0.80;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   max-width: 600px;
@@ -91,8 +87,11 @@
 .erro {
   color: #e63946;
   font-size: 0.85rem;
-  margin-top: 4px;
   padding-left: 4px;
+  margin: 0;
+  top: 5px;
+  right: 168px;
+
 }
 
 .btn-submit {
@@ -119,9 +118,21 @@
   text-align: center;
 }
 
+/* Responsividade */
+@media (max-width: 1024px) {
+  .global {
+    padding: 30px;
+  }
+}
+
 @media (max-width: 768px) {
+  .gerar-nota-container {
+    flex-direction: column;
+  }
+
   .global {
     padding: 25px 20px;
+    max-width: 90%;
   }
 
   .gerar-nota-form h2 {
@@ -130,5 +141,31 @@
 
   .descricao-formulario {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .global {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .gerar-nota-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .erro {
+    margin: 0;
+    padding: 4px;
+    right: 55px;
+  }
+
+  .descricao-formulario {
+    font-size: 14px;
+  }
+
+  .btn-submit {
+    font-size: 0.9rem;
+    padding: 10px;
   }
 }
