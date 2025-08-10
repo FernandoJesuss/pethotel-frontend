@@ -136,7 +136,7 @@ Permite administrar reservas, serviços, emissão de notas fiscais e relatórios
 | Criar Conta | ![Criar Conta](docs/tela-criar-conta.png) |
 | Recuperar Senha | ![Recuperar Senha](docs/tela-recuperar-senha.png) |
 | Dashboard | ![Dashboard](docs/tela-dashboard.png) |
-| Calendário de Compromissos | ![Calendário](docs/tela-calendario-compromissos.png) |
+| Calendário de Compromissos | ![Calendário](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20calendario%20de%20compromisso%20.png) |
 | Gerador de Serviços | ![Gerador de Serviços](docs/tela-gerador-servicos.png) |
 | Relatório de Serviços | ![Relatório de Serviços](docs/tela-relatorio-servicos.png) |
 | Emissão de Nota Fiscal | ![Nota Fiscal](docs/tela-nota-fiscal.png) |
@@ -160,6 +160,7 @@ Permite administrar reservas, serviços, emissão de notas fiscais e relatórios
 
 ---
 
+````
 ## 📂 Estrutura do Projeto
 hotel-pet/
 │
