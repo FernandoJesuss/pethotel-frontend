@@ -71,78 +71,23 @@ git clone https://github.com/seu-usuario/hotel-pet.git
 cd hotel-pet
 ````
 
-````2️⃣ Rodar o Backend
-bash
-Copiar
-Editar
+---
+ 2️⃣ Rodar o Backend
+
+````
+
 cd backend
 npm install
 npm start
 ````
-````3️⃣ Rodar o Frontend
+
+---
+3️⃣ Rodar o Frontend
+````
 cd frontend
 npm install
 npm start
 ````
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 🐾 Hotel Pet - Sistema de Gestão
-
-Sistema completo de gestão para hotéis e hospedagens de pets, com **frontend** e **backend** integrados.  
-Permite administrar reservas, serviços, emissão de notas fiscais e relatórios de forma prática e organizada.
-
----
-
-## 📌 Funcionalidades
-
-- Cadastro e autenticação de usuários.
-- Dashboard com visão geral do hotel.
-- Controle de agendamentos e compromissos.
-- Geração e gerenciamento de serviços.
-- Emissão de notas fiscais.
-- Relatórios detalhados.
-- Interface moderna e responsiva.
-
----
-
 ## 🖼 Telas do Sistema
 
 | Tela | Imagem |
@@ -156,75 +101,9 @@ Permite administrar reservas, serviços, emissão de notas fiscais e relatórios
 | Relatório de Serviços | ![Relatório de Serviços](docs/tela-relatorio-servicos.png) |
 | Emissão de Nota Fiscal | ![Nota Fiscal](docs/tela-nota-fiscal.png) |
 
-> Todas as telas estão disponíveis na pasta `/docs`.
+> Todas as telas estão disponíveis na pasta `/assets`.
 
 ---
-
-## 🛠 Tecnologias Utilizadas
-
-### **Frontend**
-- HTML5, CSS3, JavaScript (ou framework utilizado, ex.: React, Vue, Angular)
-- Biblioteca de componentes (se houver)
-- Consumo de API REST
-
-### **Backend**
-- Node.js / Python / Java (especificar)
-- Framework backend (Express, Django, Spring Boot, etc.)
-- Banco de dados (MySQL, PostgreSQL, MongoDB, etc.)
-- Autenticação JWT / OAuth
-
----
-
-````
-## 📂 Estrutura do Projeto
-hotel-pet/
-│
-├── backend/ # Código do servidor (API REST)
-│ ├── src/
-│ ├── package.json
-│ └── ...
-│
-├── frontend/ # Aplicação web
-│ ├── public/
-│ ├── src/
-│ ├── package.json
-│ └── ...
-│
-├── docs/ # Documentação e imagens
-│ ├── tela-inicial.png
-│ ├── tela-criar-conta.png
-│ ├── tela-recuperar-senha.png
-│ ├── tela-dashboard.png
-│ ├── tela-calendario-compromissos.png
-│ ├── tela-gerador-servicos.png
-│ ├── tela-relatorio-servicos.png
-│ └── tela-nota-fiscal.png
-│
-└── README.md # Documentação principal
-
-
-
----
-
-## 🚀 Como Rodar o Projeto
-
-### **Pré-requisitos**
-- Node.js / Python / Java instalados
-- Banco de dados configurado
-- Git instalado
-
-### **Instalação**
-```bash
-# Clonar repositório
-git clone https://github.com/usuario/hotel-pet.git
-
-# Backend
-cd backend
-npm install   # ou comando equivalente
-
-# Frontend
-cd ../frontend
-npm install   # ou comando equivalente
 
 
 
