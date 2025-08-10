@@ -97,9 +97,9 @@ npm start
 | Recuperar Senha | ![Recuperar Senha](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20recperar%20senha.png) |
 | Dashboard | ![Dashboard](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20dashboard.png) |
 | Calendário de Compromissos | ![Calendário](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20calendario%20de%20compromisso%20.png) |
-| Gerador de Serviços | ![Gerador de Serviços](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20gerador%20de%20servi%C3%A7os.png) |
+| Gerador de Serviços | ![Gerador de Serviços](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/Gerador%20de%20servico.png) |
 | Relatório de Serviços | ![Relatório de Serviços](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20relatorio%20de%20servi%C3%A7os.png) |
-| Emissão de Nota Fiscal | ![Nota Fiscal](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/nf.png) |
+| Emissão de Nota Fiscal | ![Nota Fiscal](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/Emiss%C3%A3o%20de%20Nota%20Fiscal.png) |
 
 > Todas as telas estão disponíveis na pasta `/assets`.
 
