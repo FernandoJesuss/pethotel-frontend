@@ -20,42 +20,41 @@ Permite controle de reservas, geração de notas fiscais, relatórios e muito ma
 ## 🛠 Tecnologias Utilizadas
 
 ### Frontend
-- React.js (Create React App)
-- CSS3, JavaScript
-- Axios para requisições HTTP
+- React.js | JavaScript | TypeScript
+- Estilizçõ: CSS3
+- Axios para  para requisições HTTP
 
 ### Backend
-- Node.js
-- Express.js
-- Banco de dados (MongoDB, MySQL ou PostgreSQL, dependendo da sua implementação)
+- Node.js | Express.js | MongoDB
 - JWT para autenticação
 
 ---
 ````
 ## 📂 Estrutura de Pastas
 
-hotel-pet/
-│
-├── backend/ # Código do servidor (API REST)
-│ ├── src/
-│ ├── package.json
-│ └── ...
-│
-├── frontend/ # Aplicação React
-│ ├── public/
-│ ├── src/
-│ ├── package.json
-│ └── ...
-│
-└── docs/ # Imagens e documentação
-├── tela-inicial.png
-├── tela-criar-conta.png
-├── tela-recuperar-senha.png
-├── tela-dashboard.png
-├── tela-calendario-compromissos.png
-├── tela-gerador-servicos.png
-├── tela-relatorio-servicos.png
-└── tela-nota-fiscal.png
+src
+├── assets/                # Imagens, ícones e arquivos estáticos
+├── components/            # Componentes reutilizáveis
+├── contexts/              # Context API para gerenciamento de estado global
+├── pages/                 # Páginas principais do sistema
+│   ├── CadastroTutor.js
+│   ├── CadastroUsuario.js
+│   ├── CalendarioCompromissos.js
+│   ├── Dashboard.js
+│   ├── EsqueciSenha.js
+│   ├── GerarNota.js
+│   ├── GerenciadorServicos.js
+│   ├── Login.js
+│   ├── LoginMobile.js
+│   ├── ParteVendas.js
+│   ├── Relatorio.js
+├── services/              # Serviços e integração com API
+├── styles/                # Arquivos de estilização CSS
+├── App.css
+├── App.js
+├── index.css
+├── index.js
+
 
 ````
 
