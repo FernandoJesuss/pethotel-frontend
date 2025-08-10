@@ -4,14 +4,14 @@
     width: 100%;
     max-width: 300px;
     text-align: center;
-    font-size: 7rem;
+    font-size: 5.5rem;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 50px;
     font-family: 'Segoe UI', sans-serif;
     color: white;
     position: absolute;
     top: -20px;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     text-shadow:
         4px 4px 0px rgba(0, 0, 0, 0.3),
@@ -29,12 +29,17 @@
     }
 }
 
+
+
 .hotel-pet-pet {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: -5rem;
     right: 8px;
+    left: -6px;
     font-weight: 600;
-    color: #f39c12;
+    color:#f39c12;
     text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3), 0 0 20px rgba(243, 156, 18, 0.6);
     animation: bounce 2s ease-in-out infinite;
 }
@@ -47,7 +52,7 @@
     }
 
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
 }
 
@@ -71,8 +76,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.30);
-    backdrop-filter: blur(1px);
+    /* background: rgba(0, 0, 0, 0.30); */
+    /* backdrop-filter: blur(1px); */
     z-index: 0;
 }
 
@@ -286,35 +291,6 @@ hr {
     left: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== AJUSTES PARA NOTEBOOK E TELAS GRANDES (default já funciona) ===== */
 @media (max-width: 1440px) {
     .login360-cube {
         left: 50% !important;
@@ -322,7 +298,6 @@ hr {
     }
 }
 
-/* ===== AJUSTE PARA IPHONE 14 PRO MAX ===== */
 @media (max-width: 1280px) {
     .login360-cube {
         width: 60% !important;
@@ -332,7 +307,6 @@ hr {
     }
 }
 
-/* ===== AJUSTE PARA PIXEL 7 PRO ===== */
 @media (max-width: 1040px) {
     .login360-cube {
         width: 85% !important;
@@ -343,7 +317,6 @@ hr {
     }
 }
 
-/* ===== AJUSTE PARA IPHONE 14 PRO ===== */
 @media (max-width: 853px) {
     .login360-cube {
         width: 92% !important;
@@ -359,7 +332,6 @@ hr {
     }
 }
 
-/* ===== PARA TELAS MUITO PEQUENAS (<= 400px) ===== */
 @media (max-width: 400px) {
     
 .login-mobile-box {
@@ -383,32 +355,39 @@ hr {
         font-size: 3rem !important;
         top: 5px !important;
     }
+
+    .hotel-pet-pet {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -5rem;
+    right: 8px;
+    left: -3px;
+    font-weight: 600;
+    color:#f39c12;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3), 0 0 20px rgba(243, 156, 18, 0.6);
+    animation: bounce 2s ease-in-out infinite;
 }
 
+    
+@keyframes bounce {
 
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
 
+    50% {
+        transform: translateY(-15px);
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+}
 
 /* ======== LOGIN MOBILE ======== */
 .hotel-pet-pet {
-    top: -35px;
+    top: -15px;
     right: 1.5px;
 }
 

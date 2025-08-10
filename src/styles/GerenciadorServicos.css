@@ -613,7 +613,7 @@ strong {
 }
 
 .edt {
-  right: 165px;
+  right: 115px;
   font-size: 12px;
 }
 
@@ -948,7 +948,7 @@ label {
 @media (max-width: 480px) {
   .edt {
     font-size: 12px;
-    right: 15px;
+    right: 1px;
     font-weight: 300;
     color: #2b3543;
   }

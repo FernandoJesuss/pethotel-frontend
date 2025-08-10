@@ -150,6 +150,10 @@
     max-width: 95%;
   }
 
+  h1 {
+    font-size: 20px;
+  }
+
   .gerar-nota-form h2 {
     font-size: 1.5rem;
   }
@@ -161,7 +165,9 @@
   }
 
   .descricao-formulario {
-    font-size: 14px;
+    font-size: 15px;
+    top: 3px;
+    font-weight: 500;
   }
 
   .btn-submit {

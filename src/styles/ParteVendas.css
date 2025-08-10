@@ -592,6 +592,81 @@
 }
 
 
+
+@media (max-width: 1440px) {
+ 
+  #checkin,
+  #checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    bottom: 2px;
+    min-width: 100%;
+    right: 260px;
+  }
+
+  .package-price {
+    font-size: 2rem;
+  }
+
+  .pet-info,
+  .owner-info {
+    padding: 1rem;
+  }
+
+}
+
+@media (max-width: 1280px) {
+     #checkin,
+  #checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    bottom: 2px;
+    min-width: 100%;
+    right: 298px;
+  }
+
+  .package-price {
+    font-size: 2rem;
+  }
+
+  .pet-info,
+  .owner-info {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1040px) {
+#checkin,
+  #checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    bottom: 2px;
+    min-width: 100%;
+    right: 238px;
+  }
+
+  .package-price {
+    font-size: 2rem;
+  }
+
+  .pet-info,
+  .owner-info {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 1rem;

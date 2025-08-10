@@ -367,7 +367,7 @@
   position: absolute;
   bottom: 60px;
   color: #718096;
-  font-size: 0.875rem; /* Usando rem */
+  font-size: 0.875rem; 
 }
 
 .dashboard-search {
@@ -619,7 +619,8 @@
     font-size: 1.25rem; /* Usando rem */
   }
   .dashboard-subtitle {
-    font-size: 0.875rem; /* Usando rem */
+    top: 35px;
+    font-size: 0.75rem; /* Usando rem */
   }
   .dashboard-search {
     max-width: 100%;
