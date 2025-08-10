@@ -21,13 +21,13 @@ Permite controle de reservas, geração de notas fiscais, relatórios e muito ma
 
 ### Frontend
 - React.js (Create React App)
-- HTML5, CSS3, JavaScript
+- CSS3, JavaScript
 - Axios para requisições HTTP
 
 ### Backend
 - Node.js
 - Express.js
-- Banco de dados (MySQL ou PostgreSQL, dependendo da sua implementação)
+- Banco de dados (MongoDB, MySQL ou PostgreSQL, dependendo da sua implementação)
 - JWT para autenticação
 
 ---
@@ -92,14 +92,14 @@ npm start
 
 | Tela | Imagem |
 |------|--------|
-| Tela Inicial | ![Tela Inicial](docs/tela-inicial.png) |
-| Criar Conta | ![Criar Conta](docs/tela-criar-conta.png) |
-| Recuperar Senha | ![Recuperar Senha](docs/tela-recuperar-senha.png) |
-| Dashboard | ![Dashboard](docs/tela-dashboard.png) |
+| Tela Inicial | ![Tela Inicial](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20inicial.png) |
+| Criar Conta | ![Criar Conta](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20criar%20conta.png) |
+| Recuperar Senha | ![Recuperar Senha](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20recperar%20senha.png) |
+| Dashboard | ![Dashboard](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20dashboard.png) |
 | Calendário de Compromissos | ![Calendário](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20calendario%20de%20compromisso%20.png) |
-| Gerador de Serviços | ![Gerador de Serviços](docs/tela-gerador-servicos.png) |
-| Relatório de Serviços | ![Relatório de Serviços](docs/tela-relatorio-servicos.png) |
-| Emissão de Nota Fiscal | ![Nota Fiscal](docs/tela-nota-fiscal.png) |
+| Gerador de Serviços | ![Gerador de Serviços](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20gerador%20de%20servi%C3%A7os.png) |
+| Relatório de Serviços | ![Relatório de Serviços](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/tela%20relatorio%20de%20servi%C3%A7os.png) |
+| Emissão de Nota Fiscal | ![Nota Fiscal](https://github.com/FernandoJesuss/pethotel-frontend/blob/main/src/assets/nf.png) |
 
 > Todas as telas estão disponíveis na pasta `/assets`.
 
