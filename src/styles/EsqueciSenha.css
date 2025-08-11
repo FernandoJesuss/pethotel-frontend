@@ -99,71 +99,6 @@
     transform: translateY(-1px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== PARA TELAS MUITO PEQUENAS (<= 400px) ===== */
-/* @media (max-width: 400px) {
-
-    .login-mobile-box {
-        margin-top: 110px;
-        width: 100%;
-        max-width: 380px;
-        background: rgba(255, 255, 255, 0.9);
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .login360-cube {
-        width: 95% !important;
-        max-width: 320px !important;
-        min-height: 380px !important;
-        left: 50% !important;
-        transform: translateX(-62%) !important;
-    }
-
-    .hotel-pet {
-        font-size: 3rem !important;
-        top: 5px !important;
-    }
-}
-
-
-
-
-
-
-
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
 /* ======== LOGIN MOBILE ======== */
 .hotel-pet-pet {
     top: -35px;
@@ -196,14 +131,10 @@
     align-items: center;
     padding: 20px;
     margin-top: 700px;
-
-
-
     width: 100%;
     max-width: 380px;
     background: rgba(255, 255, 255, 0.9);
-    /* padding: 25px; */
-    border-radius: 12px;
+        border-radius: 12px;
 
 }
 
@@ -228,31 +159,3 @@ h2 {
 }
 
 
-
-/* .login-subtitle {
-    top: 1px;
-} */
-
-/* .login-mobile-box .login-form input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 6px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-} */
-
-/* .login-mobile-box button {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(to right, #8a2be2, #6a0dad);
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-} */
-
-/* .login-mobile-box button:hover {
-    background: linear-gradient(to right, #9b3ff3, #7c12e3);
-} */

@@ -98,7 +98,7 @@ body {
   margin-top: 20px;
 }
 
-.resumo-datas > div {
+.resumo-datas>div {
   background: rgba(255, 255, 255, 0.15);
   padding: 20px;
   border-radius: 12px;
@@ -108,7 +108,7 @@ body {
   cursor: pointer;
 }
 
-.resumo-datas > div:hover {
+.resumo-datas>div:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
@@ -454,7 +454,7 @@ body {
   gap: 15px;
 }
 
-.estatistica > div {
+.estatistica>div {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 12px;
@@ -464,7 +464,7 @@ body {
   cursor: pointer;
 }
 
-.estatistica > div:hover {
+.estatistica>div:hover {
   background: rgba(255, 255, 255, 0.15);
   transform: scale(1.05);
 }
@@ -489,6 +489,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -500,6 +501,7 @@ body {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -516,7 +518,7 @@ body {
     gap: 15px;
     padding: 15px;
   }
-  
+
   .resumo-datas,
   .estatistica {
     grid-template-columns: 1fr;
@@ -527,20 +529,20 @@ body {
   .agenda-coluna {
     padding: 20px;
   }
-  
+
   .form-grid {
     flex-direction: column;
   }
-  
+
   .form-grid input[type="time"] {
     width: 100%;
     margin-right: 0;
   }
-  
+
   .botoes-compromisso {
     justify-content: center;
   }
-  
+
   .agenda-coluna h3,
   .agenda-coluna h4 {
     font-size: 18px;
@@ -551,11 +553,11 @@ body {
   .agenda-pro-container {
     padding: 10px;
   }
-  
+
   .agenda-coluna {
     padding: 15px;
   }
-  
+
   .compromisso-button-concluir,
   .compromisso-button-edt,
   .compromisso-button-excluir {
@@ -564,10 +566,21 @@ body {
   }
 }
 
-.text-center { text-align: center; }
-.text-white { color: white; }
-.mb-20 { margin-bottom: 20px; }
-.mt-20 { margin-top: 20px; }
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
 
 .loading {
   opacity: 0.5;
@@ -580,7 +593,17 @@ body {
 }
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  75% { transform: translateX(5px); }
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
 }

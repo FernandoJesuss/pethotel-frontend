@@ -7,7 +7,7 @@ const GerenciadorServicos = () => {
   const [tipo, setTipo] = useState('Avulso');
   const [valor, setValor] = useState('');
 
-  // ✅ Carrega serviços direto do localStorage ao iniciar
+  
   const [servicos, setServicos] = useState(() => {
     const dadosSalvos = localStorage.getItem('servicos');
     try {
@@ -22,7 +22,7 @@ const GerenciadorServicos = () => {
   const [modoEdicao, setModoEdicao] = useState(false);
   const [indiceEdicao, setIndiceEdicao] = useState(null);
 
-  // ✅ Salva sempre que serviços mudam
+ 
   useEffect(() => {
     localStorage.setItem('servicos', JSON.stringify(servicos));
   }, [servicos]);

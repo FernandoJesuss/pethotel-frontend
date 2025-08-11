@@ -97,26 +97,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { useState, useEffect } from 'react';
 import { GiSniffingDog } from "react-icons/gi";
 import LoginMobile from './LoginMobile'; // Importa a versão mobile
